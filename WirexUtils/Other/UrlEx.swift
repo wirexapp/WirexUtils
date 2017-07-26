@@ -9,25 +9,23 @@
 import Foundation
 
 extension URL {
-    public var queryItems: [String: String]? {
-        return URLComponents(url: self, resolvingAgainstBaseURL: false)?.dictRepr
+    public var queryItems: [String: String] {
+        return URLComponents(url: self, resolvingAgainstBaseURL: false)?.dictRepr ?? [:]
     }
 }
 
 extension URLComponents {
-    public var dictRepr:  [String: String]? {
-        return self.queryItems?
-            .flatMap { $0.dictRepr }
-            .reduce([:], +)
+    public var dictRepr:  [String: String] {
+        return self.queryItems?.flatMap { $0.dictRepr }.reduce([:], +) ?? [:]
     }
 }
 
 extension URLQueryItem {
-    public var dictRepr: [String: String]? {
+    public var dictRepr: [String: String] {
         if let value = value {
             return [name: value]
         }
-        return nil
+        return [:]
     }
 }
 

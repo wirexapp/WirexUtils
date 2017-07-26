@@ -66,7 +66,7 @@ public struct BtcPaymentURI {
         guard scheme == Fields.scheme.str, !components.path.isEmpty else { return nil }
         
         self.address = components.path
-        self.parameters = components.dictRepr ?? [:]
+        self.parameters = components.dictRepr
     }
     
     public var str: String {

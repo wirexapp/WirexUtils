@@ -6,20 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		465C74501F288D6000CD469E /* CommonCryptoModuleMap */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 465C74511F288D6000CD469E /* Build configuration list for PBXAggregateTarget "CommonCryptoModuleMap" */;
-			buildPhases = (
-				465C74541F288D6E00CD469E /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = CommonCryptoModuleMap;
-			productName = CommonCryptoModuleMap;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		465C74291F28881500CD469E /* WirexUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465C741F1F28881500CD469E /* WirexUtils.framework */; };
 		465C74301F28881500CD469E /* WirexUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 465C74221F28881500CD469E /* WirexUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,6 +27,8 @@
 		465C746D1F28DA4C00CD469E /* DispatchSourceEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C746C1F28DA4C00CD469E /* DispatchSourceEx.swift */; };
 		465C74711F28DB8B00CD469E /* UrlExTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C74701F28DB8B00CD469E /* UrlExTests.swift */; };
 		465C74731F28DEC000CD469E /* DispatchSourceExTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C74721F28DEC000CD469E /* DispatchSourceExTests.swift */; };
+		46C666EA1F29ECD00046FDB0 /* CryptoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 46C666E81F29ECD00046FDB0 /* CryptoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46C666EB1F29ECD00046FDB0 /* CryptoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C666E91F29ECD00046FDB0 /* CryptoHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,13 +38,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 465C741E1F28881500CD469E;
 			remoteInfo = WirexUtils;
-		};
-		465C74551F288D8F00CD469E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 465C74161F28881500CD469E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 465C74501F288D6000CD469E;
-			remoteInfo = CommonCryptoModuleMap;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -84,6 +65,8 @@
 		465C746C1F28DA4C00CD469E /* DispatchSourceEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchSourceEx.swift; sourceTree = "<group>"; };
 		465C74701F28DB8B00CD469E /* UrlExTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlExTests.swift; sourceTree = "<group>"; };
 		465C74721F28DEC000CD469E /* DispatchSourceExTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchSourceExTests.swift; sourceTree = "<group>"; };
+		46C666E81F29ECD00046FDB0 /* CryptoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryptoHelper.h; sourceTree = "<group>"; };
+		46C666E91F29ECD00046FDB0 /* CryptoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptoHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +165,8 @@
 			children = (
 				465C74421F2888F700CD469E /* StringEx.swift */,
 				465C74431F2888F700CD469E /* UnicodeScalarEx.swift */,
+				46C666E81F29ECD00046FDB0 /* CryptoHelper.h */,
+				46C666E91F29ECD00046FDB0 /* CryptoHelper.m */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -221,6 +206,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46C666EA1F29ECD00046FDB0 /* CryptoHelper.h in Headers */,
 				465C74301F28881500CD469E /* WirexUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,7 +226,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				465C74561F288D8F00CD469E /* PBXTargetDependency */,
 			);
 			name = WirexUtils;
 			productName = WirexUtils;
@@ -278,14 +263,10 @@
 					465C741E1F28881500CD469E = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 8T84Y6S85A;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					465C74271F28881500CD469E = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 8T84Y6S85A;
-						ProvisioningStyle = Automatic;
-					};
-					465C74501F288D6000CD469E = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 8T84Y6S85A;
 						ProvisioningStyle = Automatic;
@@ -306,7 +287,6 @@
 			targets = (
 				465C741E1F28881500CD469E /* WirexUtils */,
 				465C74271F28881500CD469E /* WirexUtilsTests */,
-				465C74501F288D6000CD469E /* CommonCryptoModuleMap */,
 			);
 		};
 /* End PBXProject section */
@@ -328,22 +308,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		465C74541F288D6E00CD469E /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "mkdir -p \"${BUILT_PRODUCTS_DIR}/CommonCryptoModuleMap\"\ncat <<EOF > \"${BUILT_PRODUCTS_DIR}/CommonCryptoModuleMap/module.modulemap\"\nmodule CommonCrypto [system] {\n    header \"${SDKROOT}/usr/include/CommonCrypto/CommonCrypto.h\"\n    export *\n}\nEOF";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		465C741A1F28881500CD469E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -351,6 +315,7 @@
 			files = (
 				465C744D1F2888F700CD469E /* UnicodeScalarEx.swift in Sources */,
 				465C745D1F28908500CD469E /* BtcAddress.swift in Sources */,
+				46C666EB1F29ECD00046FDB0 /* CryptoHelper.m in Sources */,
 				465C744B1F2888F700CD469E /* UrlEx.swift in Sources */,
 				465C745C1F28908500CD469E /* Base58.swift in Sources */,
 				465C744A1F2888F700CD469E /* BundleEx.swift in Sources */,
@@ -385,11 +350,6 @@
 			target = 465C741E1F28881500CD469E /* WirexUtils */;
 			targetProxy = 465C742A1F28881500CD469E /* PBXContainerItemProxy */;
 		};
-		465C74561F288D8F00CD469E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 465C74501F288D6000CD469E /* CommonCryptoModuleMap */;
-			targetProxy = 465C74551F288D8F00CD469E /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -397,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -419,6 +380,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -455,6 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -477,6 +440,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -505,6 +469,7 @@
 		465C74341F28881500CD469E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8T84Y6S85A;
@@ -517,6 +482,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wirex.utils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -524,6 +490,7 @@
 		465C74351F28881500CD469E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8T84Y6S85A;
@@ -566,22 +533,6 @@
 			};
 			name = Release;
 		};
-		465C74521F288D6000CD469E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = 8T84Y6S85A;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		465C74531F288D6000CD469E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = 8T84Y6S85A;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -601,6 +552,7 @@
 				465C74351F28881500CD469E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		465C74361F28881500CD469E /* Build configuration list for PBXNativeTarget "WirexUtilsTests" */ = {
 			isa = XCConfigurationList;
@@ -609,14 +561,7 @@
 				465C74381F28881500CD469E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		465C74511F288D6000CD469E /* Build configuration list for PBXAggregateTarget "CommonCryptoModuleMap" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				465C74521F288D6000CD469E /* Debug */,
-				465C74531F288D6000CD469E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import CommonCrypto
 
 // https://github.com/bitcoin/bitcoin/blob/master/src/base58.cpp
 
@@ -96,9 +95,6 @@ public struct Base58 {
     
     // MARK:
     private static func sha265(_ m: [UInt8]) -> [UInt8] {
-        var hash = [UInt8](repeating: 0,  count: Int(CC_SHA256_DIGEST_LENGTH))
-        _ = CC_SHA256(m, CC_LONG(m.count), &hash)
-        
-        return hash
+        return [UInt8](CryptoHelper.sha256(Data(bytes: m)))
     }
 }

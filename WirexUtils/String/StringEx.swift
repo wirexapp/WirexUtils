@@ -2,7 +2,7 @@
 //  StringExtension.swift
 //  WirexUtils
 //
-//  Created by Sergii Avilov on 11/8/16.
+//  Created by Eugen Fedchenko on 4/10/17.
 //  Copyright © 2016 Wirex. All rights reserved.
 //
 

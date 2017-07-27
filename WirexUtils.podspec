@@ -14,11 +14,11 @@ Pod::Spec.new do |s|
   s.homepage         = "https://wirexapp.com"
   s.license          = 'MIT'
   s.author           = { "Eugen Fedchenko" => "eugenf78@gmail.com" }
-  s.source           = { :git => "https://github.com/wirexapp/WirexUtils.git", :tag => s.version.to_s }
-  #s.social_media_url = 'https://twitter.com/hyperoslo'
+  s.source           = { :git => "https://github.com/wirexapp/WirexUtils.git" }
+  #s.social_media_url = 'https://twitter.com/hyperoslo', 
   s.platform     = :ios, '10.0'
   s.requires_arc = true
-  s.source_files = 'Source/**/*'
+  s.source_files = "WirexUtils", "WirexUtils/**/*.{h,m,swift}"
   s.frameworks = 'Foundation'
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.2' }
 

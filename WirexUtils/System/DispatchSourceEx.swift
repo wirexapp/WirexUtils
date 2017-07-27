@@ -8,6 +8,8 @@
 
 import Foundation
 
+// https://github.com/mattgallagher/CwlUtils/blob/master/Sources/CwlUtils/CwlDispatch.swift
+
 extension DispatchSource {
     
     public class func singleTimer(interval: DispatchTimeInterval,

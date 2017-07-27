@@ -11,6 +11,8 @@ import Foundation
 public struct AtomicBoolean {
     private var val: UInt8 = 0
     
+    public init() {}
+    
     public var value: Bool {
         get {
             return val != 0

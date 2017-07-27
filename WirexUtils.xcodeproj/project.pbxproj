@@ -27,8 +27,9 @@
 		465C746D1F28DA4C00CD469E /* DispatchSourceEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C746C1F28DA4C00CD469E /* DispatchSourceEx.swift */; };
 		465C74711F28DB8B00CD469E /* UrlExTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C74701F28DB8B00CD469E /* UrlExTests.swift */; };
 		465C74731F28DEC000CD469E /* DispatchSourceExTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C74721F28DEC000CD469E /* DispatchSourceExTests.swift */; };
-		46C666EA1F29ECD00046FDB0 /* CryptoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 46C666E81F29ECD00046FDB0 /* CryptoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46C666EB1F29ECD00046FDB0 /* CryptoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C666E91F29ECD00046FDB0 /* CryptoHelper.m */; };
+		4686C1CF1F2A258900B87600 /* CryptoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 4686C1CD1F2A258900B87600 /* CryptoHelper.h */; };
+		4686C1D01F2A258900B87600 /* CryptoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4686C1CE1F2A258900B87600 /* CryptoHelper.m */; };
+		4686C1D21F2A259100B87600 /* StringEntropy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4686C1D11F2A259100B87600 /* StringEntropy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +66,9 @@
 		465C746C1F28DA4C00CD469E /* DispatchSourceEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchSourceEx.swift; sourceTree = "<group>"; };
 		465C74701F28DB8B00CD469E /* UrlExTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlExTests.swift; sourceTree = "<group>"; };
 		465C74721F28DEC000CD469E /* DispatchSourceExTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchSourceExTests.swift; sourceTree = "<group>"; };
-		46C666E81F29ECD00046FDB0 /* CryptoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryptoHelper.h; sourceTree = "<group>"; };
-		46C666E91F29ECD00046FDB0 /* CryptoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptoHelper.m; sourceTree = "<group>"; };
+		4686C1CD1F2A258900B87600 /* CryptoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryptoHelper.h; sourceTree = "<group>"; };
+		4686C1CE1F2A258900B87600 /* CryptoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptoHelper.m; sourceTree = "<group>"; };
+		4686C1D11F2A259100B87600 /* StringEntropy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringEntropy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,8 @@
 		465C743E1F2888F700CD469E /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				4686C1CD1F2A258900B87600 /* CryptoHelper.h */,
+				4686C1CE1F2A258900B87600 /* CryptoHelper.m */,
 				465C743F1F2888F700CD469E /* BundleEx.swift */,
 				465C74401F2888F700CD469E /* UrlEx.swift */,
 			);
@@ -163,10 +167,9 @@
 		465C74411F2888F700CD469E /* String */ = {
 			isa = PBXGroup;
 			children = (
+				4686C1D11F2A259100B87600 /* StringEntropy.swift */,
 				465C74421F2888F700CD469E /* StringEx.swift */,
 				465C74431F2888F700CD469E /* UnicodeScalarEx.swift */,
-				46C666E81F29ECD00046FDB0 /* CryptoHelper.h */,
-				46C666E91F29ECD00046FDB0 /* CryptoHelper.m */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -206,8 +209,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46C666EA1F29ECD00046FDB0 /* CryptoHelper.h in Headers */,
 				465C74301F28881500CD469E /* WirexUtils.h in Headers */,
+				4686C1CF1F2A258900B87600 /* CryptoHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,10 +318,11 @@
 			files = (
 				465C744D1F2888F700CD469E /* UnicodeScalarEx.swift in Sources */,
 				465C745D1F28908500CD469E /* BtcAddress.swift in Sources */,
-				46C666EB1F29ECD00046FDB0 /* CryptoHelper.m in Sources */,
+				4686C1D01F2A258900B87600 /* CryptoHelper.m in Sources */,
 				465C744B1F2888F700CD469E /* UrlEx.swift in Sources */,
 				465C745C1F28908500CD469E /* Base58.swift in Sources */,
 				465C744A1F2888F700CD469E /* BundleEx.swift in Sources */,
+				4686C1D21F2A259100B87600 /* StringEntropy.swift in Sources */,
 				465C746B1F28D85F00CD469E /* DispatchTimeEx.swift in Sources */,
 				465C746D1F28DA4C00CD469E /* DispatchSourceEx.swift in Sources */,
 				465C744E1F2888F700CD469E /* AtomicBoolean.swift in Sources */,

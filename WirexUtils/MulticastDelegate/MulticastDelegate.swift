@@ -10,6 +10,8 @@ import Foundation
 
 public class MulticastDelegate <T> {
     
+    public init() {}
+    
     public func addDelegate(_ delegate: T) {
         lock.lock()
         defer { self.lock.unlock() }

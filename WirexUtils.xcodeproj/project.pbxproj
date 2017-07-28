@@ -27,9 +27,10 @@
 		465C746D1F28DA4C00CD469E /* DispatchSourceEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C746C1F28DA4C00CD469E /* DispatchSourceEx.swift */; };
 		465C74711F28DB8B00CD469E /* UrlExTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C74701F28DB8B00CD469E /* UrlExTests.swift */; };
 		465C74731F28DEC000CD469E /* DispatchSourceExTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C74721F28DEC000CD469E /* DispatchSourceExTests.swift */; };
-		4686C1CF1F2A258900B87600 /* CryptoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 4686C1CD1F2A258900B87600 /* CryptoHelper.h */; };
+		4686C1CF1F2A258900B87600 /* CryptoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 4686C1CD1F2A258900B87600 /* CryptoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4686C1D01F2A258900B87600 /* CryptoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4686C1CE1F2A258900B87600 /* CryptoHelper.m */; };
 		4686C1D21F2A259100B87600 /* StringEntropy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4686C1D11F2A259100B87600 /* StringEntropy.swift */; };
+		4686C1D41F2B2F2B00B87600 /* BtcHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4686C1D31F2B2F2B00B87600 /* BtcHelperUrls.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		4686C1CD1F2A258900B87600 /* CryptoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryptoHelper.h; sourceTree = "<group>"; };
 		4686C1CE1F2A258900B87600 /* CryptoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptoHelper.m; sourceTree = "<group>"; };
 		4686C1D11F2A259100B87600 /* StringEntropy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringEntropy.swift; sourceTree = "<group>"; };
+		4686C1D31F2B2F2B00B87600 /* BtcHelperUrls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtcHelperUrls.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 				465C74591F28908500CD469E /* Base58.swift */,
 				465C745A1F28908500CD469E /* BtcAddress.swift */,
 				465C745B1F28908500CD469E /* BtcPaymentURI.swift */,
+				4686C1D31F2B2F2B00B87600 /* BtcHelperUrls.swift */,
 			);
 			path = Btc;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				465C74471F2888F700CD469E /* DateComparer.swift in Sources */,
 				465C744C1F2888F700CD469E /* StringEx.swift in Sources */,
 				465C745E1F28908500CD469E /* BtcPaymentURI.swift in Sources */,
+				4686C1D41F2B2F2B00B87600 /* BtcHelperUrls.swift in Sources */,
 				465C74481F2888F700CD469E /* MulticastDelegate.swift in Sources */,
 				465C74491F2888F700CD469E /* WeakBox.swift in Sources */,
 			);

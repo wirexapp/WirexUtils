@@ -8,9 +8,8 @@
 
 import Foundation
 
-struct BtcHelperUrls {
-    
-    func tradeblockTx(hash: String) -> URL? {
+public struct BtcHelperUrls {
+    public func tradeblockTx(hash: String) -> URL? {
         return URL(string: "https://tradeblock.com/bitcoin/tx/" + hash)
     }
 

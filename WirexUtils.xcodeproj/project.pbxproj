@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		463D3B2D1F30DB0A00CBE419 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463D3B2C1F30DB0A00CBE419 /* EmailValidator.swift */; };
 		465C74291F28881500CD469E /* WirexUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465C741F1F28881500CD469E /* WirexUtils.framework */; };
 		465C74301F28881500CD469E /* WirexUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 465C74221F28881500CD469E /* WirexUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		465C74471F2888F700CD469E /* DateComparer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C743A1F2888F700CD469E /* DateComparer.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		463D3B2C1F30DB0A00CBE419 /* EmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 		465C741F1F28881500CD469E /* WirexUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WirexUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		465C74221F28881500CD469E /* WirexUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WirexUtils.h; sourceTree = "<group>"; };
 		465C74231F28881500CD469E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 		465C743E1F2888F700CD469E /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				463D3B2C1F30DB0A00CBE419 /* EmailValidator.swift */,
 				4686C1CD1F2A258900B87600 /* CryptoHelper.h */,
 				4686C1CE1F2A258900B87600 /* CryptoHelper.m */,
 				465C743F1F2888F700CD469E /* BundleEx.swift */,
@@ -325,6 +328,7 @@
 				465C744B1F2888F700CD469E /* UrlEx.swift in Sources */,
 				465C745C1F28908500CD469E /* Base58.swift in Sources */,
 				465C744A1F2888F700CD469E /* BundleEx.swift in Sources */,
+				463D3B2D1F30DB0A00CBE419 /* EmailValidator.swift in Sources */,
 				4686C1D21F2A259100B87600 /* StringEntropy.swift in Sources */,
 				465C746B1F28D85F00CD469E /* DispatchTimeEx.swift in Sources */,
 				465C746D1F28DA4C00CD469E /* DispatchSourceEx.swift in Sources */,

@@ -32,6 +32,7 @@
 		4686C1D01F2A258900B87600 /* CryptoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4686C1CE1F2A258900B87600 /* CryptoHelper.m */; };
 		4686C1D21F2A259100B87600 /* StringEntropy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4686C1D11F2A259100B87600 /* StringEntropy.swift */; };
 		4686C1D41F2B2F2B00B87600 /* BtcHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4686C1D31F2B2F2B00B87600 /* BtcHelperUrls.swift */; };
+		46ABA4CD1F4335AA00E75642 /* Require.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ABA4CC1F4335AA00E75642 /* Require.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		4686C1CE1F2A258900B87600 /* CryptoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptoHelper.m; sourceTree = "<group>"; };
 		4686C1D11F2A259100B87600 /* StringEntropy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringEntropy.swift; sourceTree = "<group>"; };
 		4686C1D31F2B2F2B00B87600 /* BtcHelperUrls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtcHelperUrls.swift; sourceTree = "<group>"; };
+		46ABA4CC1F4335AA00E75642 /* Require.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Require.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 				4686C1CE1F2A258900B87600 /* CryptoHelper.m */,
 				465C743F1F2888F700CD469E /* BundleEx.swift */,
 				465C74401F2888F700CD469E /* UrlEx.swift */,
+				46ABA4CC1F4335AA00E75642 /* Require.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				463D3B2D1F30DB0A00CBE419 /* EmailValidator.swift in Sources */,
 				4686C1D21F2A259100B87600 /* StringEntropy.swift in Sources */,
 				465C746B1F28D85F00CD469E /* DispatchTimeEx.swift in Sources */,
+				46ABA4CD1F4335AA00E75642 /* Require.swift in Sources */,
 				465C746D1F28DA4C00CD469E /* DispatchSourceEx.swift in Sources */,
 				465C744E1F2888F700CD469E /* AtomicBoolean.swift in Sources */,
 				465C74471F2888F700CD469E /* DateComparer.swift in Sources */,

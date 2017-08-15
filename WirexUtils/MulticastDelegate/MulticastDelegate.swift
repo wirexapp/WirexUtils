@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class MulticastDelegate <T> {
+open class MulticastDelegate <T> {
     
     public init() {}
     
@@ -19,7 +19,7 @@ public class MulticastDelegate <T> {
         weakDelegates.append(WeakBox(delegate as AnyObject))
     }
     
-    public func removeDelegate(_ delegate: T) {
+    open func removeDelegate(_ delegate: T) {
         lock.lock()
         defer { self.lock.unlock() }
         
@@ -28,7 +28,7 @@ public class MulticastDelegate <T> {
         }
     }
     
-    public func invoke(_ invocation: (T) -> Void) {
+    open func invoke(_ invocation: (T) -> Void) {
         lock.lock()
         defer { self.lock.unlock() }
 

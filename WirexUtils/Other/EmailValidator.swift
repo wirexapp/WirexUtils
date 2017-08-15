@@ -10,10 +10,11 @@ import Foundation
 
 public struct EmailValidator {
     
-    static let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
-    static let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+    private static let name = "[a-z0-9!#$%&'*+/=?^_`{|}~]"
+    private static let server = "[a-z0-9\\.-]"
+    private static let pattern = "^\(name)+([\\.-]?\(name)+)*@\(server)+([\\.-]?\(server)+)*(\\.\\w{2,3})+$"
     
     public static func isValid(email: String) -> Bool {
-        return emailTest.evaluate(with: email)
+        return email.range(of: pattern, options: [.regularExpression, .caseInsensitive]) != nil
     }
 }

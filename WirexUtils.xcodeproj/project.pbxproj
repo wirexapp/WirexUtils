@@ -33,6 +33,7 @@
 		4686C1D21F2A259100B87600 /* StringEntropy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4686C1D11F2A259100B87600 /* StringEntropy.swift */; };
 		4686C1D41F2B2F2B00B87600 /* BtcHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4686C1D31F2B2F2B00B87600 /* BtcHelperUrls.swift */; };
 		46ABA4CD1F4335AA00E75642 /* Require.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ABA4CC1F4335AA00E75642 /* Require.swift */; };
+		46ABA4CF1F43858000E75642 /* EmailValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ABA4CE1F43858000E75642 /* EmailValidatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		4686C1D11F2A259100B87600 /* StringEntropy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringEntropy.swift; sourceTree = "<group>"; };
 		4686C1D31F2B2F2B00B87600 /* BtcHelperUrls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtcHelperUrls.swift; sourceTree = "<group>"; };
 		46ABA4CC1F4335AA00E75642 /* Require.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Require.swift; sourceTree = "<group>"; };
+		46ABA4CE1F43858000E75642 /* EmailValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				465C74611F2890CD00CD469E /* BtcPaymentURITests.swift */,
 				465C74701F28DB8B00CD469E /* UrlExTests.swift */,
 				465C74721F28DEC000CD469E /* DispatchSourceExTests.swift */,
+				46ABA4CE1F43858000E75642 /* EmailValidatorTests.swift */,
 			);
 			path = WirexUtilsTests;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				465C74641F2890CD00CD469E /* BtcPaymentURITests.swift in Sources */,
 				465C74621F2890CD00CD469E /* Base58Tests.swift in Sources */,
 				465C74711F28DB8B00CD469E /* UrlExTests.swift in Sources */,
+				46ABA4CF1F43858000E75642 /* EmailValidatorTests.swift in Sources */,
 				465C74731F28DEC000CD469E /* DispatchSourceExTests.swift in Sources */,
 				465C74631F2890CD00CD469E /* BtcAddressTests.swift in Sources */,
 			);

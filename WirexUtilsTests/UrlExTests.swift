@@ -22,7 +22,7 @@ class UrlExTests: XCTestCase {
     }
     
     func testUrl() {
-        XCTAssertEqual((URL(string: "http://www.ya.ru?one=1&two=2&three=3")?.queryItems)!, ["one" : "1", "two" : "2", "three" : "3"])
-        XCTAssertEqual((URL(string: "http://www.ya.ru")?.queryItems)!, [:])
+        XCTAssertEqual(URL(str: "http://www.ya.ru?one=1&two=2&three=3").queryItems, ["one" : "1", "two" : "2", "three" : "3"])
+        XCTAssertEqual(URL(str: "http://www.ya.ru").queryItems, [:])
     }
 }

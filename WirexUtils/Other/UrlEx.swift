@@ -8,6 +8,27 @@
 
 import Foundation
 
+extension URL: ExpressibleByStringLiteral {
+    public init(stringLiteral value: StaticString) {
+        self = URL(string: "\(value)").require(hint: "Invalid URL string literal: \(value)")
+    }
+}
+
+extension URL {
+    public init(extendedGraphemeClusterLiteral value: StaticString) {
+        self.init(stringLiteral: value)
+    }
+    
+    public init(unicodeScalarLiteral value: StaticString) {
+        self.init(stringLiteral: value)
+    }
+
+    public init(str value: StaticString) {
+        self.init(stringLiteral: value)
+    }
+}
+
+// MARK:
 extension URL {
     public var queryItems: [String: String] {
         return URLComponents(url: self, resolvingAgainstBaseURL: false)?.dictRepr ?? [:]

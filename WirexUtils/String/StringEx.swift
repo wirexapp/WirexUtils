@@ -99,3 +99,18 @@ extension String {
         return key
     }
 }
+
+extension String {
+    public static func flag(forCountryCode code: String) -> Character {
+        let base = UnicodeScalar("🇦").value - UnicodeScalar("A").value
+    
+        var string = ""
+        code.uppercased().unicodeScalars.forEach {
+            if let scala = UnicodeScalar(base + $0.value) {
+                string.append(String(describing: scala))
+            }
+        }
+    
+        return Character(string)
+    }
+}

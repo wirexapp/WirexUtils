@@ -10,11 +10,6 @@ import Foundation
 
 extension Data {
     
-    public init(bytes: [UInt8]) {
-        var values = bytes
-        self.init(buffer: UnsafeBufferPointer(start: &values, count: values.count))
-    }
-    
     public func hexEncoded() -> String {
         return map { String(format: "%02hhx", $0) }.joined()
     }

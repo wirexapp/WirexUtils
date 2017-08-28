@@ -13,4 +13,8 @@ extension Bundle {
     public func string(key: String) -> String? {
         return self.infoDictionary?[key] as? String
     }
+    
+    public var appVersion: String {
+        return self.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? ""
+    }
 }

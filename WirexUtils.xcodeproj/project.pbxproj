@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		463D3B2D1F30DB0A00CBE419 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463D3B2C1F30DB0A00CBE419 /* EmailValidator.swift */; };
+		4648ADDD1F546BF30025CD0F /* DataEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4648ADDC1F546BF30025CD0F /* DataEx.swift */; };
 		465C74291F28881500CD469E /* WirexUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465C741F1F28881500CD469E /* WirexUtils.framework */; };
 		465C74301F28881500CD469E /* WirexUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 465C74221F28881500CD469E /* WirexUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		465C74471F2888F700CD469E /* DateComparer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C743A1F2888F700CD469E /* DateComparer.swift */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		463D3B2C1F30DB0A00CBE419 /* EmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
+		4648ADDC1F546BF30025CD0F /* DataEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataEx.swift; sourceTree = "<group>"; };
 		465C741F1F28881500CD469E /* WirexUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WirexUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		465C74221F28881500CD469E /* WirexUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WirexUtils.h; sourceTree = "<group>"; };
 		465C74231F28881500CD469E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				465C743F1F2888F700CD469E /* BundleEx.swift */,
 				465C74401F2888F700CD469E /* UrlEx.swift */,
 				46ABA4CC1F4335AA00E75642 /* Require.swift */,
+				4648ADDC1F546BF30025CD0F /* DataEx.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				4686C1D21F2A259100B87600 /* StringEntropy.swift in Sources */,
 				465C746B1F28D85F00CD469E /* DispatchTimeEx.swift in Sources */,
 				46ABA4CD1F4335AA00E75642 /* Require.swift in Sources */,
+				4648ADDD1F546BF30025CD0F /* DataEx.swift in Sources */,
 				465C746D1F28DA4C00CD469E /* DispatchSourceEx.swift in Sources */,
 				465C744E1F2888F700CD469E /* AtomicBoolean.swift in Sources */,
 				465C74471F2888F700CD469E /* DateComparer.swift in Sources */,

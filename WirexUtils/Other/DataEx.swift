@@ -28,7 +28,7 @@ extension Data {
                 let b = UnsafeMutableBufferPointer<UInt8>(start: start, count: xorData.count)
                 
                 let k = UnsafeBufferPointer<UInt8>(start: keyStart, count: data.count)
-                let length = data.count
+                let length = key.count
                 
                 for i in 0..<xorData.count {
                     b[i] ^= k[i % length]

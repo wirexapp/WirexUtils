@@ -8,6 +8,8 @@
 
 import Foundation
 
+// https://medium.com/@darthpelo/email-validation-in-swift-3-0-acfebe4d879a
+
 public struct EmailValidator {
     
     private static let emailRegEx = "(?:[a-z0-9!#$%\\&'*+/=?\\^_`{|}~-]+(?:\\.[a-z0-9!#$%\\&'*+/=?\\^_`{|}" +

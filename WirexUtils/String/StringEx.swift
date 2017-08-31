@@ -8,6 +8,7 @@
 
 import Foundation
 
+// MARK:
 extension String {
 
     public var length: Int { return self.characters.count }
@@ -17,6 +18,7 @@ extension String {
     }
 }
 
+// MARK:
 extension String {
     
     public func toNumberString() -> String {
@@ -30,6 +32,7 @@ extension String {
     }
 }
 
+// MARK:
 extension String {
     
     public func md5HexDigest() -> String {
@@ -56,6 +59,7 @@ extension String {
 
 }
 
+// MARK:
 extension String {
     
     public var isLatinOnlyString: Bool {
@@ -74,13 +78,20 @@ extension String {
     }
 }
 
+// MARK:
 extension String {
+    
     public func isValid(regex: String) -> Bool {
         let res = self.range(of: regex, options: .regularExpression)
         return res != nil
     }
+    
+    public func isValid(regex: NSRegularExpression) -> Bool {
+        return regex.firstMatch(in: self, options: [], range: nsrange) != nil
+    }
 }
 
+// MARK:
 extension String {
 
     public static func localized(key: String, bundle: Bundle, _ args: CVarArg...) -> String {
@@ -100,6 +111,40 @@ extension String {
     }
 }
 
+// MARK:
+// http://nshipster.com/nsregularexpression/
+extension String {
+    /// An `NSRange` that represents the full range of the string.
+    var nsrange: NSRange {
+        return NSRange(location: 0, length: utf16.count)
+    }
+    
+    /// Returns a substring with the given `NSRange`,
+    /// or `nil` if the range can't be converted.
+    func substring(with nsrange: NSRange) -> String? {
+        guard let range = nsrange.toRange()
+            else { return nil }
+        let start = UTF16Index(range.lowerBound)
+        let end = UTF16Index(range.upperBound)
+        return String(utf16[start..<end])
+    }
+    
+    /// Returns a range equivalent to the given `NSRange`,
+    /// or `nil` if the range can't be converted.
+    func range(from nsrange: NSRange) -> Range<Index>? {
+        guard let range = nsrange.toRange() else { return nil }
+        let utf16Start = UTF16Index(range.lowerBound)
+        let utf16End = UTF16Index(range.upperBound)
+        
+        guard let start = Index(utf16Start, within: self),
+            let end = Index(utf16End, within: self)
+            else { return nil }
+        
+        return start..<end
+    }
+}
+
+// MARK:
 extension String {
     public static func flag(forCountryCode code: String) -> Character {
         let base = UnicodeScalar("🇦").value - UnicodeScalar("A").value

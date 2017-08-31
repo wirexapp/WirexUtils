@@ -145,4 +145,9 @@ class BtcAddressTests: XCTestCase {
         }
     }
     
+    func testSegwit() {
+        let addr = BtcAddress(string: "36ghjA1KSAB1jDYD2RdiexEcY7r6XjmDQk")
+        print("\(addr.isValid)")
+    }
+    
 }

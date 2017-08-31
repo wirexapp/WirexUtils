@@ -10,14 +10,17 @@ import Foundation
 
 public struct EmailValidator {
     
-    private static let name = "[a-z0-9!#$%&'*+/=?^_`{|}~]"
-    private static let server = "[a-z0-9\\.-]"
-    private static let pattern = "^\(name)+([\\.-]?\(name)+)*@\(server)+([\\.-]?\(server)+)*(\\.\\w{2,3})+$"
-    
-    private static let rx = try! NSRegularExpression(pattern: pattern, options: .caseInsensitive)
+    private static let emailRegEx = "(?:[a-z0-9!#$%\\&'*+/=?\\^_`{|}~-]+(?:\\.[a-z0-9!#$%\\&'*+/=?\\^_`{|}" +
+        "~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\" +
+        "x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-" +
+        "z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5" +
+        "]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-" +
+        "9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21" +
+        "-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])"
+        
+    private static let emailTest = NSPredicate(format:"SELF MATCHES[c] %@", emailRegEx)
     
     public static func isValid(email: String) -> Bool {
-        return email.isValid(regex: rx)
-        //return email.range(of: pattern, options: [.regularExpression, .caseInsensitive]) != nil
+        return emailTest.evaluate(with: email)
     }
 }

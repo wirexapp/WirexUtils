@@ -6,10 +6,11 @@
 //  Copyright © 2017 wirex. All rights reserved.
 //
 
-#import "CryptoHelper.h"
+#import "CryptoFacade.h"
 #import <CommonCrypto/CommonCrypto.h>
+//#import <stdatomic.h>
 
-@implementation CryptoHelper
+@implementation CryptoFacade
 
 + (NSString *)md5HexDigest:(NSString *)src {
     const char* str = [src UTF8String];

@@ -95,6 +95,8 @@ public struct Base58 {
     
     // MARK:
     private static func sha265(_ m: [UInt8]) -> [UInt8] {
-        return [UInt8](CryptoHelper.sha256(Data(bytes: m)))
+        
+        
+        return [UInt8](CryptoFacade.sha256(Data(bytes: m)))
     }
 }

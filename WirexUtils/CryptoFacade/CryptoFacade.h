@@ -1,5 +1,5 @@
 //
-//  CryptoHelper.h
+//  CryptoFacade.h
 //  WirexUtils
 //
 //  Created by Eugen Fedchenko on 7/27/17.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CryptoHelper : NSObject
+@interface CryptoFacade : NSObject
 
 + (nonnull NSString *)md5HexDigest:(nonnull NSString *)src;
 + (nonnull NSData *)sha256:(nonnull NSData *)src;

@@ -20,7 +20,7 @@ extension DispatchSource {
         let result = DispatchSource.makeTimerSource(queue: queue)
         
         result.setEventHandler(handler: handler)
-        result.scheduleOneshot(deadline: DispatchTime.now() + interval, leeway: leeway)
+        result.schedule(deadline: DispatchTime.now() + interval, leeway: leeway)
         result.resume()
         
         return result
@@ -34,7 +34,7 @@ extension DispatchSource {
         let result = DispatchSource.makeTimerSource(queue: queue)
         
         result.setEventHandler(handler: handler)
-        result.scheduleRepeating(deadline: DispatchTime.now() + interval, interval: interval, leeway: leeway)
+        result.schedule(deadline: DispatchTime.now() + interval, repeating: interval, leeway: leeway)
         result.resume()
         
         return result

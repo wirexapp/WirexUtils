@@ -7,34 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		463D3B2D1F30DB0A00CBE419 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463D3B2C1F30DB0A00CBE419 /* EmailValidator.swift */; };
-		4648ADDD1F546BF30025CD0F /* DataEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4648ADDC1F546BF30025CD0F /* DataEx.swift */; };
 		465C74291F28881500CD469E /* WirexUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465C741F1F28881500CD469E /* WirexUtils.framework */; };
 		465C74301F28881500CD469E /* WirexUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 465C74221F28881500CD469E /* WirexUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		465C74471F2888F700CD469E /* DateComparer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C743A1F2888F700CD469E /* DateComparer.swift */; };
-		465C74481F2888F700CD469E /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C743C1F2888F700CD469E /* MulticastDelegate.swift */; };
-		465C74491F2888F700CD469E /* WeakBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C743D1F2888F700CD469E /* WeakBox.swift */; };
-		465C744A1F2888F700CD469E /* BundleEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C743F1F2888F700CD469E /* BundleEx.swift */; };
-		465C744B1F2888F700CD469E /* UrlEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C74401F2888F700CD469E /* UrlEx.swift */; };
-		465C744C1F2888F700CD469E /* StringEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C74421F2888F700CD469E /* StringEx.swift */; };
-		465C744D1F2888F700CD469E /* UnicodeScalarEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C74431F2888F700CD469E /* UnicodeScalarEx.swift */; };
-		465C744E1F2888F700CD469E /* AtomicBoolean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C74451F2888F700CD469E /* AtomicBoolean.swift */; };
-		465C745C1F28908500CD469E /* Base58.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C74591F28908500CD469E /* Base58.swift */; };
-		465C745D1F28908500CD469E /* BtcAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C745A1F28908500CD469E /* BtcAddress.swift */; };
-		465C745E1F28908500CD469E /* BtcPaymentURI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C745B1F28908500CD469E /* BtcPaymentURI.swift */; };
-		465C74621F2890CD00CD469E /* Base58Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C745F1F2890CD00CD469E /* Base58Tests.swift */; };
-		465C74631F2890CD00CD469E /* BtcAddressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C74601F2890CD00CD469E /* BtcAddressTests.swift */; };
-		465C74641F2890CD00CD469E /* BtcPaymentURITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C74611F2890CD00CD469E /* BtcPaymentURITests.swift */; };
-		465C746B1F28D85F00CD469E /* DispatchTimeEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C746A1F28D85F00CD469E /* DispatchTimeEx.swift */; };
-		465C746D1F28DA4C00CD469E /* DispatchSourceEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C746C1F28DA4C00CD469E /* DispatchSourceEx.swift */; };
-		465C74711F28DB8B00CD469E /* UrlExTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C74701F28DB8B00CD469E /* UrlExTests.swift */; };
-		465C74731F28DEC000CD469E /* DispatchSourceExTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C74721F28DEC000CD469E /* DispatchSourceExTests.swift */; };
-		4686C1CF1F2A258900B87600 /* CryptoHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 4686C1CD1F2A258900B87600 /* CryptoHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4686C1D01F2A258900B87600 /* CryptoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4686C1CE1F2A258900B87600 /* CryptoHelper.m */; };
-		4686C1D21F2A259100B87600 /* StringEntropy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4686C1D11F2A259100B87600 /* StringEntropy.swift */; };
-		4686C1D41F2B2F2B00B87600 /* BtcHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4686C1D31F2B2F2B00B87600 /* BtcHelperUrls.swift */; };
-		46ABA4CD1F4335AA00E75642 /* Require.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ABA4CC1F4335AA00E75642 /* Require.swift */; };
-		46ABA4CF1F43858000E75642 /* EmailValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ABA4CE1F43858000E75642 /* EmailValidatorTests.swift */; };
+		46CC32041F727B3000632B18 /* DispatchSourceExTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31FE1F727B3000632B18 /* DispatchSourceExTests.swift */; };
+		46CC32051F727B3000632B18 /* EmailValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31FF1F727B3000632B18 /* EmailValidatorTests.swift */; };
+		46CC32061F727B3000632B18 /* UrlExTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC32001F727B3000632B18 /* UrlExTests.swift */; };
+		46CC32071F727B3000632B18 /* BtcAddressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC32011F727B3000632B18 /* BtcAddressTests.swift */; };
+		46CC32081F727B3000632B18 /* Base58Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC32021F727B3000632B18 /* Base58Tests.swift */; };
+		46CC32091F727B3000632B18 /* BtcPaymentURITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC32031F727B3000632B18 /* BtcPaymentURITests.swift */; };
+		46CC320A1F727C6100632B18 /* Require.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31FC1F727ADB00632B18 /* Require.swift */; };
+		46CC320B1F727C6100632B18 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31FA1F727ADB00632B18 /* MulticastDelegate.swift */; };
+		46CC320C1F727C6100632B18 /* WeakBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31FB1F727ADB00632B18 /* WeakBox.swift */; };
+		46CC320D1F727C6700632B18 /* Base58.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31F41F727ADB00632B18 /* Base58.swift */; };
+		46CC320E1F727C6700632B18 /* BtcAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31F51F727ADB00632B18 /* BtcAddress.swift */; };
+		46CC320F1F727C6700632B18 /* BtcHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31F61F727ADB00632B18 /* BtcHelperUrls.swift */; };
+		46CC32101F727C6700632B18 /* BtcPaymentURI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31F71F727ADB00632B18 /* BtcPaymentURI.swift */; };
+		46CC32111F727C6A00632B18 /* CryptoFacade.h in Headers */ = {isa = PBXBuildFile; fileRef = 46CC31F01F727ADB00632B18 /* CryptoFacade.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46CC32121F727C6A00632B18 /* CryptoFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31F11F727ADB00632B18 /* CryptoFacade.m */; };
+		46CC32131F727C6E00632B18 /* AtomicBoolean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31E01F727ADB00632B18 /* AtomicBoolean.swift */; };
+		46CC32141F727C6E00632B18 /* DispatchSourceEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31E11F727ADB00632B18 /* DispatchSourceEx.swift */; };
+		46CC32151F727C6E00632B18 /* DispatchTimeEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31E21F727ADB00632B18 /* DispatchTimeEx.swift */; };
+		46CC32161F727C7800632B18 /* BundleEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31E41F727ADB00632B18 /* BundleEx.swift */; };
+		46CC32171F727C7800632B18 /* DataEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31E51F727ADB00632B18 /* DataEx.swift */; };
+		46CC32181F727C7800632B18 /* DateComparer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31E71F727ADB00632B18 /* DateComparer.swift */; };
+		46CC32191F727C7800632B18 /* StringEntropy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31E91F727ADB00632B18 /* StringEntropy.swift */; };
+		46CC321A1F727C7800632B18 /* StringEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31EA1F727ADB00632B18 /* StringEx.swift */; };
+		46CC321B1F727C7800632B18 /* UnicodeScalarEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31EB1F727ADB00632B18 /* UnicodeScalarEx.swift */; };
+		46CC321C1F727C7800632B18 /* UrlEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31EC1F727ADB00632B18 /* UrlEx.swift */; };
+		46CC321D1F727C7B00632B18 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31EE1F727ADB00632B18 /* EmailValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,37 +48,37 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		463D3B2C1F30DB0A00CBE419 /* EmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
-		4648ADDC1F546BF30025CD0F /* DataEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataEx.swift; sourceTree = "<group>"; };
 		465C741F1F28881500CD469E /* WirexUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WirexUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		465C74221F28881500CD469E /* WirexUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WirexUtils.h; sourceTree = "<group>"; };
 		465C74231F28881500CD469E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		465C74281F28881500CD469E /* WirexUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WirexUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		465C742F1F28881500CD469E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		465C743A1F2888F700CD469E /* DateComparer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateComparer.swift; sourceTree = "<group>"; };
-		465C743C1F2888F700CD469E /* MulticastDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
-		465C743D1F2888F700CD469E /* WeakBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakBox.swift; sourceTree = "<group>"; };
-		465C743F1F2888F700CD469E /* BundleEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleEx.swift; sourceTree = "<group>"; };
-		465C74401F2888F700CD469E /* UrlEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlEx.swift; sourceTree = "<group>"; };
-		465C74421F2888F700CD469E /* StringEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringEx.swift; sourceTree = "<group>"; };
-		465C74431F2888F700CD469E /* UnicodeScalarEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnicodeScalarEx.swift; sourceTree = "<group>"; };
-		465C74451F2888F700CD469E /* AtomicBoolean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtomicBoolean.swift; sourceTree = "<group>"; };
-		465C74591F28908500CD469E /* Base58.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base58.swift; sourceTree = "<group>"; };
-		465C745A1F28908500CD469E /* BtcAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtcAddress.swift; sourceTree = "<group>"; };
-		465C745B1F28908500CD469E /* BtcPaymentURI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtcPaymentURI.swift; sourceTree = "<group>"; };
-		465C745F1F2890CD00CD469E /* Base58Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base58Tests.swift; sourceTree = "<group>"; };
-		465C74601F2890CD00CD469E /* BtcAddressTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtcAddressTests.swift; sourceTree = "<group>"; };
-		465C74611F2890CD00CD469E /* BtcPaymentURITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtcPaymentURITests.swift; sourceTree = "<group>"; };
-		465C746A1F28D85F00CD469E /* DispatchTimeEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchTimeEx.swift; sourceTree = "<group>"; };
-		465C746C1F28DA4C00CD469E /* DispatchSourceEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchSourceEx.swift; sourceTree = "<group>"; };
-		465C74701F28DB8B00CD469E /* UrlExTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlExTests.swift; sourceTree = "<group>"; };
-		465C74721F28DEC000CD469E /* DispatchSourceExTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchSourceExTests.swift; sourceTree = "<group>"; };
-		4686C1CD1F2A258900B87600 /* CryptoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryptoHelper.h; sourceTree = "<group>"; };
-		4686C1CE1F2A258900B87600 /* CryptoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptoHelper.m; sourceTree = "<group>"; };
-		4686C1D11F2A259100B87600 /* StringEntropy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringEntropy.swift; sourceTree = "<group>"; };
-		4686C1D31F2B2F2B00B87600 /* BtcHelperUrls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtcHelperUrls.swift; sourceTree = "<group>"; };
-		46ABA4CC1F4335AA00E75642 /* Require.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Require.swift; sourceTree = "<group>"; };
-		46ABA4CE1F43858000E75642 /* EmailValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidatorTests.swift; sourceTree = "<group>"; };
+		46CC31E01F727ADB00632B18 /* AtomicBoolean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicBoolean.swift; sourceTree = "<group>"; };
+		46CC31E11F727ADB00632B18 /* DispatchSourceEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchSourceEx.swift; sourceTree = "<group>"; };
+		46CC31E21F727ADB00632B18 /* DispatchTimeEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchTimeEx.swift; sourceTree = "<group>"; };
+		46CC31E41F727ADB00632B18 /* BundleEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleEx.swift; sourceTree = "<group>"; };
+		46CC31E51F727ADB00632B18 /* DataEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEx.swift; sourceTree = "<group>"; };
+		46CC31E71F727ADB00632B18 /* DateComparer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateComparer.swift; sourceTree = "<group>"; };
+		46CC31E91F727ADB00632B18 /* StringEntropy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringEntropy.swift; sourceTree = "<group>"; };
+		46CC31EA1F727ADB00632B18 /* StringEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringEx.swift; sourceTree = "<group>"; };
+		46CC31EB1F727ADB00632B18 /* UnicodeScalarEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicodeScalarEx.swift; sourceTree = "<group>"; };
+		46CC31EC1F727ADB00632B18 /* UrlEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlEx.swift; sourceTree = "<group>"; };
+		46CC31EE1F727ADB00632B18 /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
+		46CC31F01F727ADB00632B18 /* CryptoFacade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryptoFacade.h; sourceTree = "<group>"; };
+		46CC31F11F727ADB00632B18 /* CryptoFacade.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryptoFacade.m; sourceTree = "<group>"; };
+		46CC31F41F727ADB00632B18 /* Base58.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base58.swift; sourceTree = "<group>"; };
+		46CC31F51F727ADB00632B18 /* BtcAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtcAddress.swift; sourceTree = "<group>"; };
+		46CC31F61F727ADB00632B18 /* BtcHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtcHelperUrls.swift; sourceTree = "<group>"; };
+		46CC31F71F727ADB00632B18 /* BtcPaymentURI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtcPaymentURI.swift; sourceTree = "<group>"; };
+		46CC31FA1F727ADB00632B18 /* MulticastDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
+		46CC31FB1F727ADB00632B18 /* WeakBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakBox.swift; sourceTree = "<group>"; };
+		46CC31FC1F727ADB00632B18 /* Require.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Require.swift; sourceTree = "<group>"; };
+		46CC31FE1F727B3000632B18 /* DispatchSourceExTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchSourceExTests.swift; sourceTree = "<group>"; };
+		46CC31FF1F727B3000632B18 /* EmailValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidatorTests.swift; sourceTree = "<group>"; };
+		46CC32001F727B3000632B18 /* UrlExTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlExTests.swift; sourceTree = "<group>"; };
+		46CC32011F727B3000632B18 /* BtcAddressTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtcAddressTests.swift; sourceTree = "<group>"; };
+		46CC32021F727B3000632B18 /* Base58Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base58Tests.swift; sourceTree = "<group>"; };
+		46CC32031F727B3000632B18 /* BtcPaymentURITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtcPaymentURITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,12 +121,12 @@
 		465C74211F28881500CD469E /* WirexUtils */ = {
 			isa = PBXGroup;
 			children = (
-				465C74571F28908500CD469E /* Crypto */,
-				465C74391F2888F700CD469E /* Date */,
-				465C743B1F2888F700CD469E /* MulticastDelegate */,
-				465C743E1F2888F700CD469E /* Other */,
-				465C74411F2888F700CD469E /* String */,
-				465C74441F2888F700CD469E /* System */,
+				46CC31F81F727ADB00632B18 /* Base */,
+				46CC31F21F727ADB00632B18 /* CryptoCurrency */,
+				46CC31EF1F727ADB00632B18 /* CryptoFacade */,
+				46CC31DF1F727ADB00632B18 /* System */,
+				46CC31E31F727ADB00632B18 /* Types */,
+				46CC31ED1F727ADB00632B18 /* Validators */,
 				465C74221F28881500CD469E /* WirexUtils.h */,
 				465C74231F28881500CD469E /* Info.plist */,
 			);
@@ -136,85 +136,109 @@
 		465C742C1F28881500CD469E /* WirexUtilsTests */ = {
 			isa = PBXGroup;
 			children = (
+				46CC32021F727B3000632B18 /* Base58Tests.swift */,
+				46CC32011F727B3000632B18 /* BtcAddressTests.swift */,
+				46CC32031F727B3000632B18 /* BtcPaymentURITests.swift */,
+				46CC31FE1F727B3000632B18 /* DispatchSourceExTests.swift */,
+				46CC31FF1F727B3000632B18 /* EmailValidatorTests.swift */,
+				46CC32001F727B3000632B18 /* UrlExTests.swift */,
 				465C742F1F28881500CD469E /* Info.plist */,
-				465C745F1F2890CD00CD469E /* Base58Tests.swift */,
-				465C74601F2890CD00CD469E /* BtcAddressTests.swift */,
-				465C74611F2890CD00CD469E /* BtcPaymentURITests.swift */,
-				465C74701F28DB8B00CD469E /* UrlExTests.swift */,
-				465C74721F28DEC000CD469E /* DispatchSourceExTests.swift */,
-				46ABA4CE1F43858000E75642 /* EmailValidatorTests.swift */,
 			);
 			path = WirexUtilsTests;
 			sourceTree = "<group>";
 		};
-		465C74391F2888F700CD469E /* Date */ = {
+		46CC31DF1F727ADB00632B18 /* System */ = {
 			isa = PBXGroup;
 			children = (
-				465C743A1F2888F700CD469E /* DateComparer.swift */,
-			);
-			path = Date;
-			sourceTree = "<group>";
-		};
-		465C743B1F2888F700CD469E /* MulticastDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				465C743C1F2888F700CD469E /* MulticastDelegate.swift */,
-				465C743D1F2888F700CD469E /* WeakBox.swift */,
-			);
-			path = MulticastDelegate;
-			sourceTree = "<group>";
-		};
-		465C743E1F2888F700CD469E /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				463D3B2C1F30DB0A00CBE419 /* EmailValidator.swift */,
-				4686C1CD1F2A258900B87600 /* CryptoHelper.h */,
-				4686C1CE1F2A258900B87600 /* CryptoHelper.m */,
-				465C743F1F2888F700CD469E /* BundleEx.swift */,
-				465C74401F2888F700CD469E /* UrlEx.swift */,
-				46ABA4CC1F4335AA00E75642 /* Require.swift */,
-				4648ADDC1F546BF30025CD0F /* DataEx.swift */,
-			);
-			path = Other;
-			sourceTree = "<group>";
-		};
-		465C74411F2888F700CD469E /* String */ = {
-			isa = PBXGroup;
-			children = (
-				4686C1D11F2A259100B87600 /* StringEntropy.swift */,
-				465C74421F2888F700CD469E /* StringEx.swift */,
-				465C74431F2888F700CD469E /* UnicodeScalarEx.swift */,
-			);
-			path = String;
-			sourceTree = "<group>";
-		};
-		465C74441F2888F700CD469E /* System */ = {
-			isa = PBXGroup;
-			children = (
-				465C74451F2888F700CD469E /* AtomicBoolean.swift */,
-				465C746A1F28D85F00CD469E /* DispatchTimeEx.swift */,
-				465C746C1F28DA4C00CD469E /* DispatchSourceEx.swift */,
+				46CC31E01F727ADB00632B18 /* AtomicBoolean.swift */,
+				46CC31E11F727ADB00632B18 /* DispatchSourceEx.swift */,
+				46CC31E21F727ADB00632B18 /* DispatchTimeEx.swift */,
 			);
 			path = System;
 			sourceTree = "<group>";
 		};
-		465C74571F28908500CD469E /* Crypto */ = {
+		46CC31E31F727ADB00632B18 /* Types */ = {
 			isa = PBXGroup;
 			children = (
-				465C74581F28908500CD469E /* Btc */,
+				46CC31E41F727ADB00632B18 /* BundleEx.swift */,
+				46CC31E51F727ADB00632B18 /* DataEx.swift */,
+				46CC31E61F727ADB00632B18 /* Date */,
+				46CC31E81F727ADB00632B18 /* String */,
+				46CC31EC1F727ADB00632B18 /* UrlEx.swift */,
 			);
-			path = Crypto;
+			path = Types;
 			sourceTree = "<group>";
 		};
-		465C74581F28908500CD469E /* Btc */ = {
+		46CC31E61F727ADB00632B18 /* Date */ = {
 			isa = PBXGroup;
 			children = (
-				465C74591F28908500CD469E /* Base58.swift */,
-				465C745A1F28908500CD469E /* BtcAddress.swift */,
-				465C745B1F28908500CD469E /* BtcPaymentURI.swift */,
-				4686C1D31F2B2F2B00B87600 /* BtcHelperUrls.swift */,
+				46CC31E71F727ADB00632B18 /* DateComparer.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		46CC31E81F727ADB00632B18 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				46CC31E91F727ADB00632B18 /* StringEntropy.swift */,
+				46CC31EA1F727ADB00632B18 /* StringEx.swift */,
+				46CC31EB1F727ADB00632B18 /* UnicodeScalarEx.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		46CC31ED1F727ADB00632B18 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				46CC31EE1F727ADB00632B18 /* EmailValidator.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		46CC31EF1F727ADB00632B18 /* CryptoFacade */ = {
+			isa = PBXGroup;
+			children = (
+				46CC31F01F727ADB00632B18 /* CryptoFacade.h */,
+				46CC31F11F727ADB00632B18 /* CryptoFacade.m */,
+			);
+			path = CryptoFacade;
+			sourceTree = "<group>";
+		};
+		46CC31F21F727ADB00632B18 /* CryptoCurrency */ = {
+			isa = PBXGroup;
+			children = (
+				46CC31F31F727ADB00632B18 /* Btc */,
+			);
+			path = CryptoCurrency;
+			sourceTree = "<group>";
+		};
+		46CC31F31F727ADB00632B18 /* Btc */ = {
+			isa = PBXGroup;
+			children = (
+				46CC31F41F727ADB00632B18 /* Base58.swift */,
+				46CC31F51F727ADB00632B18 /* BtcAddress.swift */,
+				46CC31F61F727ADB00632B18 /* BtcHelperUrls.swift */,
+				46CC31F71F727ADB00632B18 /* BtcPaymentURI.swift */,
 			);
 			path = Btc;
+			sourceTree = "<group>";
+		};
+		46CC31F81F727ADB00632B18 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				46CC31FC1F727ADB00632B18 /* Require.swift */,
+				46CC31F91F727ADB00632B18 /* MulticastDelegate */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		46CC31F91F727ADB00632B18 /* MulticastDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				46CC31FA1F727ADB00632B18 /* MulticastDelegate.swift */,
+				46CC31FB1F727ADB00632B18 /* WeakBox.swift */,
+			);
+			path = MulticastDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,7 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				465C74301F28881500CD469E /* WirexUtils.h in Headers */,
-				4686C1CF1F2A258900B87600 /* CryptoHelper.h in Headers */,
+				46CC32111F727C6A00632B18 /* CryptoFacade.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +311,7 @@
 					465C74271F28881500CD469E = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 8T84Y6S85A;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -331,25 +356,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				465C744D1F2888F700CD469E /* UnicodeScalarEx.swift in Sources */,
-				465C745D1F28908500CD469E /* BtcAddress.swift in Sources */,
-				4686C1D01F2A258900B87600 /* CryptoHelper.m in Sources */,
-				465C744B1F2888F700CD469E /* UrlEx.swift in Sources */,
-				465C745C1F28908500CD469E /* Base58.swift in Sources */,
-				465C744A1F2888F700CD469E /* BundleEx.swift in Sources */,
-				463D3B2D1F30DB0A00CBE419 /* EmailValidator.swift in Sources */,
-				4686C1D21F2A259100B87600 /* StringEntropy.swift in Sources */,
-				465C746B1F28D85F00CD469E /* DispatchTimeEx.swift in Sources */,
-				46ABA4CD1F4335AA00E75642 /* Require.swift in Sources */,
-				4648ADDD1F546BF30025CD0F /* DataEx.swift in Sources */,
-				465C746D1F28DA4C00CD469E /* DispatchSourceEx.swift in Sources */,
-				465C744E1F2888F700CD469E /* AtomicBoolean.swift in Sources */,
-				465C74471F2888F700CD469E /* DateComparer.swift in Sources */,
-				465C744C1F2888F700CD469E /* StringEx.swift in Sources */,
-				465C745E1F28908500CD469E /* BtcPaymentURI.swift in Sources */,
-				4686C1D41F2B2F2B00B87600 /* BtcHelperUrls.swift in Sources */,
-				465C74481F2888F700CD469E /* MulticastDelegate.swift in Sources */,
-				465C74491F2888F700CD469E /* WeakBox.swift in Sources */,
+				46CC321C1F727C7800632B18 /* UrlEx.swift in Sources */,
+				46CC320A1F727C6100632B18 /* Require.swift in Sources */,
+				46CC320F1F727C6700632B18 /* BtcHelperUrls.swift in Sources */,
+				46CC32181F727C7800632B18 /* DateComparer.swift in Sources */,
+				46CC320E1F727C6700632B18 /* BtcAddress.swift in Sources */,
+				46CC32141F727C6E00632B18 /* DispatchSourceEx.swift in Sources */,
+				46CC32161F727C7800632B18 /* BundleEx.swift in Sources */,
+				46CC32191F727C7800632B18 /* StringEntropy.swift in Sources */,
+				46CC32101F727C6700632B18 /* BtcPaymentURI.swift in Sources */,
+				46CC32151F727C6E00632B18 /* DispatchTimeEx.swift in Sources */,
+				46CC320B1F727C6100632B18 /* MulticastDelegate.swift in Sources */,
+				46CC32171F727C7800632B18 /* DataEx.swift in Sources */,
+				46CC320C1F727C6100632B18 /* WeakBox.swift in Sources */,
+				46CC32121F727C6A00632B18 /* CryptoFacade.m in Sources */,
+				46CC321A1F727C7800632B18 /* StringEx.swift in Sources */,
+				46CC321D1F727C7B00632B18 /* EmailValidator.swift in Sources */,
+				46CC32131F727C6E00632B18 /* AtomicBoolean.swift in Sources */,
+				46CC321B1F727C7800632B18 /* UnicodeScalarEx.swift in Sources */,
+				46CC320D1F727C6700632B18 /* Base58.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,12 +382,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				465C74641F2890CD00CD469E /* BtcPaymentURITests.swift in Sources */,
-				465C74621F2890CD00CD469E /* Base58Tests.swift in Sources */,
-				465C74711F28DB8B00CD469E /* UrlExTests.swift in Sources */,
-				46ABA4CF1F43858000E75642 /* EmailValidatorTests.swift in Sources */,
-				465C74731F28DEC000CD469E /* DispatchSourceExTests.swift in Sources */,
-				465C74631F2890CD00CD469E /* BtcAddressTests.swift in Sources */,
+				46CC32061F727B3000632B18 /* UrlExTests.swift in Sources */,
+				46CC32091F727B3000632B18 /* BtcPaymentURITests.swift in Sources */,
+				46CC32041F727B3000632B18 /* DispatchSourceExTests.swift in Sources */,
+				46CC32071F727B3000632B18 /* BtcAddressTests.swift in Sources */,
+				46CC32051F727B3000632B18 /* EmailValidatorTests.swift in Sources */,
+				46CC32081F727B3000632B18 /* Base58Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,7 +532,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -527,7 +552,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wirex.utils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -535,12 +560,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 8T84Y6S85A;
 				INFOPLIST_FILE = WirexUtilsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wirex.WirexUtilsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -548,12 +576,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 8T84Y6S85A;
 				INFOPLIST_FILE = WirexUtilsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wirex.WirexUtilsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

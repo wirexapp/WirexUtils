@@ -9,21 +9,20 @@
 import Foundation
 
 public struct AtomicBoolean {
-    private var val: UInt8 = 0
     
     public init() {}
     
     public var value: Bool {
-        get {
-            return val != 0
-        }
+        get { return flag != 0 }
         
         set {
             if newValue {
-                OSAtomicTestAndSet(7, &val)
+                OSAtomicTestAndSet(7, &flag)
             } else {
-                OSAtomicTestAndClear(7, &val)
+                OSAtomicTestAndClear(7, &flag)
             }
         }
     }
+    
+    private var flag: UInt8 = 0
 }

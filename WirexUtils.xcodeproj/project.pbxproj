@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		465C74291F28881500CD469E /* WirexUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465C741F1F28881500CD469E /* WirexUtils.framework */; };
 		465C74301F28881500CD469E /* WirexUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 465C74221F28881500CD469E /* WirexUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46BF3F261F793FBD00C55058 /* Cryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BF3F251F793FBD00C55058 /* Cryptor.swift */; };
+		46BF3F281F795B3800C55058 /* CryptoFacadeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BF3F271F795B3800C55058 /* CryptoFacadeTests.swift */; };
+		46BF3F2C1F79731600C55058 /* StringExTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BF3F2B1F79731600C55058 /* StringExTests.swift */; };
 		46CC32041F727B3000632B18 /* DispatchSourceExTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31FE1F727B3000632B18 /* DispatchSourceExTests.swift */; };
 		46CC32051F727B3000632B18 /* EmailValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31FF1F727B3000632B18 /* EmailValidatorTests.swift */; };
 		46CC32061F727B3000632B18 /* UrlExTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC32001F727B3000632B18 /* UrlExTests.swift */; };
@@ -53,6 +56,9 @@
 		465C74231F28881500CD469E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		465C74281F28881500CD469E /* WirexUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WirexUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		465C742F1F28881500CD469E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46BF3F251F793FBD00C55058 /* Cryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptor.swift; sourceTree = "<group>"; };
+		46BF3F271F795B3800C55058 /* CryptoFacadeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoFacadeTests.swift; sourceTree = "<group>"; };
+		46BF3F2B1F79731600C55058 /* StringExTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExTests.swift; sourceTree = "<group>"; };
 		46CC31E01F727ADB00632B18 /* AtomicBoolean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicBoolean.swift; sourceTree = "<group>"; };
 		46CC31E11F727ADB00632B18 /* DispatchSourceEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchSourceEx.swift; sourceTree = "<group>"; };
 		46CC31E21F727ADB00632B18 /* DispatchTimeEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchTimeEx.swift; sourceTree = "<group>"; };
@@ -136,6 +142,8 @@
 		465C742C1F28881500CD469E /* WirexUtilsTests */ = {
 			isa = PBXGroup;
 			children = (
+				46BF3F2B1F79731600C55058 /* StringExTests.swift */,
+				46BF3F271F795B3800C55058 /* CryptoFacadeTests.swift */,
 				46CC32021F727B3000632B18 /* Base58Tests.swift */,
 				46CC32011F727B3000632B18 /* BtcAddressTests.swift */,
 				46CC32031F727B3000632B18 /* BtcPaymentURITests.swift */,
@@ -200,6 +208,7 @@
 			children = (
 				46CC31F01F727ADB00632B18 /* CryptoFacade.h */,
 				46CC31F11F727ADB00632B18 /* CryptoFacade.m */,
+				46BF3F251F793FBD00C55058 /* Cryptor.swift */,
 			);
 			path = CryptoFacade;
 			sourceTree = "<group>";
@@ -363,6 +372,7 @@
 				46CC320E1F727C6700632B18 /* BtcAddress.swift in Sources */,
 				46CC32141F727C6E00632B18 /* DispatchSourceEx.swift in Sources */,
 				46CC32161F727C7800632B18 /* BundleEx.swift in Sources */,
+				46BF3F261F793FBD00C55058 /* Cryptor.swift in Sources */,
 				46CC32191F727C7800632B18 /* StringEntropy.swift in Sources */,
 				46CC32101F727C6700632B18 /* BtcPaymentURI.swift in Sources */,
 				46CC32151F727C6E00632B18 /* DispatchTimeEx.swift in Sources */,
@@ -387,7 +397,9 @@
 				46CC32041F727B3000632B18 /* DispatchSourceExTests.swift in Sources */,
 				46CC32071F727B3000632B18 /* BtcAddressTests.swift in Sources */,
 				46CC32051F727B3000632B18 /* EmailValidatorTests.swift in Sources */,
+				46BF3F2C1F79731600C55058 /* StringExTests.swift in Sources */,
 				46CC32081F727B3000632B18 /* Base58Tests.swift in Sources */,
+				46BF3F281F795B3800C55058 /* CryptoFacadeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

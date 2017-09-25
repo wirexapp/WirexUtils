@@ -10,24 +10,11 @@ import Foundation
 
 // MARK:
 extension String {
-
-    public var length: Int { return self.characters.count }
-    
-    public func dropLastChar() -> String {
-        return String(characters.dropLast())
-    }
-}
-
-// MARK:
-extension String {
-    
     public func toNumberString() -> String {
         let numbers = Set("0123456789".characters.map { $0 })
-        
-        let s = self.characters.filter { (c) -> Bool in
+        let s = self.filter { (c) -> Bool in
             return numbers.contains(c)
         }
-        
         return String(s)
     }
 }
@@ -36,7 +23,6 @@ extension String {
 extension String {
     
     public func md5HexDigest() -> String {
-        
         return CryptoFacade.md5HexDigest(self) as String
     }
     
@@ -57,7 +43,12 @@ extension String {
         }
         return data
     }
+}
 
+// MARK:
+extension String {
+    
+    
 }
 
 // MARK:
@@ -110,6 +101,7 @@ extension String {
 
 // MARK:
 extension String {
+    
     public static func flag(forCountryCode code: String) -> Character {
         let base = UnicodeScalar("🇦").value - UnicodeScalar("A").value
     

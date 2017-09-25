@@ -8,9 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface CryptoFacade : NSObject
 
-+ (nonnull NSString *)md5HexDigest:(nonnull NSString *)src;
-+ (nonnull NSData *)sha256:(nonnull NSData *)src;
-
++ (NSString *)md5HexDigest:(NSString *)src;
++ (NSData *)sha256:(NSData *)src;
+    
++ (nullable NSData *)DESEncryptData: (NSData *) data usingKey: (NSData* ) key error: (NSError **) error;
++ (nullable NSData *)DESDecryptData: (NSData *) data usingKey: (NSData* ) key error: (NSError **) error;
+    
 @end
+
+NS_ASSUME_NONNULL_END

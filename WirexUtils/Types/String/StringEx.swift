@@ -48,12 +48,6 @@ extension String {
 // MARK:
 extension String {
     
-    
-}
-
-// MARK:
-extension String {
-    
     public var isLatinOnlyString: Bool {
         let us = self.unicodeScalars.first { (u) -> Bool in return !u.isLatin }
         return us == nil

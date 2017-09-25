@@ -17,7 +17,10 @@ NS_ASSUME_NONNULL_BEGIN
     
 + (nullable NSData *)DESEncryptData: (NSData *) data usingKey: (NSData* ) key error: (NSError **) error;
 + (nullable NSData *)DESDecryptData: (NSData *) data usingKey: (NSData* ) key error: (NSError **) error;
-    
+
++ (nullable NSData *)AESEncryptData: (NSData *) data usingKey: (NSData* ) key error: (NSError **) error;
++ (nullable NSData *)AESDecryptData: (NSData *) data usingKey: (NSData* ) key error: (NSError **) error;
+
 @end
 
 NS_ASSUME_NONNULL_END

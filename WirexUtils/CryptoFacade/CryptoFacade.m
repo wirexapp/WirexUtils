@@ -119,6 +119,42 @@ static void FixKeyLengths(CCAlgorithm algorithm, NSMutableData *keyData, NSMutab
     return nil;
 }
 
++ (nullable NSData *)AESEncryptData: (NSData *) data usingKey: (NSData* ) key error: (NSError **) error {
+    CCCryptorStatus status = kCCSuccess;
+    NSData * result = [CryptoFacade encryptData: data
+                                      algorithm: kCCAlgorithmAES128
+                                            key: key
+                           initializationVector: nil
+                                        options: kCCOptionPKCS7Padding
+                                          error: &status];
+    
+    if (result != nil)
+    return result;
+    
+    if (error != NULL)
+    *error = errorWithCCCryptorStatus(status);
+    
+    return nil;
+}
+    
++ (nullable NSData *)AESDecryptData: (NSData *) data usingKey: (NSData* ) key error: (NSError **) error {
+    CCCryptorStatus status = kCCSuccess;
+    NSData * result = [CryptoFacade decryptData: data
+                                      algorithm: kCCAlgorithmAES128
+                                            key: key
+                           initializationVector: nil
+                                        options: kCCOptionPKCS7Padding
+                                          error: &status];
+    
+    if (result != nil)
+    return result;
+    
+    if (error != NULL)
+    *error = errorWithCCCryptorStatus(status);
+    
+    return nil;
+}
+
 #pragma mark - cryptor/decryptor - low level
     
 + (NSData *)encryptData: (NSData* ) data

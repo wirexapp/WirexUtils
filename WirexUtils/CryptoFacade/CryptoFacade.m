@@ -83,12 +83,12 @@ static void FixKeyLengths(CCAlgorithm algorithm, NSMutableData *keyData, NSMutab
     
 #pragma mark - cryptor/decryptor
     
-+ (NSData *)DESEncryptData: (NSData *) data usingKey: (NSData* ) key error: (NSError **) error {
++ (NSData *)DESEncryptData: (NSData *) data usingKey: (NSData* ) key iv: (NSData *) iv error: (NSError **) error {
     CCCryptorStatus status = kCCSuccess;
     NSData * result = [CryptoFacade encryptData: data
                                       algorithm: kCCAlgorithmDES
                                             key: key
-                           initializationVector: nil
+                           initializationVector: iv
                                         options: kCCOptionPKCS7Padding
                                           error: &status];
         
@@ -101,12 +101,12 @@ static void FixKeyLengths(CCAlgorithm algorithm, NSMutableData *keyData, NSMutab
     return nil;
 }
     
-+ (NSData *)DESDecryptData: (NSData *) data usingKey: (NSData* ) key error: (NSError **) error {
++ (NSData *)DESDecryptData: (NSData *) data usingKey: (NSData* ) key iv: (NSData *) iv error: (NSError **) error {
     CCCryptorStatus status = kCCSuccess;
     NSData * result = [CryptoFacade decryptData: data
                                       algorithm: kCCAlgorithmDES
                                             key: key
-                           initializationVector: nil
+                           initializationVector: iv
                                         options: kCCOptionPKCS7Padding
                                           error: &status];
         
@@ -119,12 +119,12 @@ static void FixKeyLengths(CCAlgorithm algorithm, NSMutableData *keyData, NSMutab
     return nil;
 }
 
-+ (nullable NSData *)AESEncryptData: (NSData *) data usingKey: (NSData* ) key error: (NSError **) error {
++ (nullable NSData *)AESEncryptData: (NSData *) data usingKey: (NSData* ) key iv: (NSData *) iv error: (NSError **) error {
     CCCryptorStatus status = kCCSuccess;
     NSData * result = [CryptoFacade encryptData: data
                                       algorithm: kCCAlgorithmAES128
                                             key: key
-                           initializationVector: nil
+                           initializationVector: iv
                                         options: kCCOptionPKCS7Padding
                                           error: &status];
     
@@ -137,12 +137,12 @@ static void FixKeyLengths(CCAlgorithm algorithm, NSMutableData *keyData, NSMutab
     return nil;
 }
     
-+ (nullable NSData *)AESDecryptData: (NSData *) data usingKey: (NSData* ) key error: (NSError **) error {
++ (nullable NSData *)AESDecryptData: (NSData *) data usingKey: (NSData* ) key iv: (NSData *) iv error: (NSError **) error {
     CCCryptorStatus status = kCCSuccess;
     NSData * result = [CryptoFacade decryptData: data
                                       algorithm: kCCAlgorithmAES128
                                             key: key
-                           initializationVector: nil
+                           initializationVector: iv
                                         options: kCCOptionPKCS7Padding
                                           error: &status];
     

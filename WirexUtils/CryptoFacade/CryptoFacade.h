@@ -15,11 +15,11 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)md5HexDigest:(NSString *)src;
 + (NSData *)sha256:(NSData *)src;
     
-+ (nullable NSData *)DESEncryptData: (NSData *) data usingKey: (NSData* ) key error: (NSError **) error;
-+ (nullable NSData *)DESDecryptData: (NSData *) data usingKey: (NSData* ) key error: (NSError **) error;
++ (nullable NSData *)DESEncryptData: (NSData *) data usingKey: (NSData* ) key iv: (NSData *) iv error: (NSError **) error;
++ (nullable NSData *)DESDecryptData: (NSData *) data usingKey: (NSData* ) key iv: (NSData *) iv error: (NSError **) error;
 
-+ (nullable NSData *)AESEncryptData: (NSData *) data usingKey: (NSData* ) key error: (NSError **) error;
-+ (nullable NSData *)AESDecryptData: (NSData *) data usingKey: (NSData* ) key error: (NSError **) error;
++ (nullable NSData *)AESEncryptData: (NSData *) data usingKey: (NSData* ) key iv: (NSData *) iv error: (NSError **) error;
++ (nullable NSData *)AESDecryptData: (NSData *) data usingKey: (NSData* ) key iv: (NSData *) iv error: (NSError **) error;
 
 @end
 

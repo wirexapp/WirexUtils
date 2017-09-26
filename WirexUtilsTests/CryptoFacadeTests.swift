@@ -13,18 +13,21 @@ class CryptoFacadeTests: XCTestCase {
     
     func testDESCrypto() {
         let msg = "This is a very secured string with numbers: 123456789"
-        let psw = "Password"
+        let psw = "12345678"
+        let iv = "87654321"
         
         let msgData = msg.data(using: .utf8)!
         let pswData = psw.data(using: .utf8)!
+        let ivData = iv.data(using: .utf8)!
         
-        let crypted = try? CryptoFacade.desEncryptData(msgData, usingKey: pswData)
-        let decrypted = try? CryptoFacade.desDecryptData(crypted!, usingKey: pswData)
+        let crypted = try? CryptoFacade.desEncryptData(msgData, usingKey: pswData, iv: ivData)
+        let decrypted = try? CryptoFacade.desDecryptData(crypted!, usingKey: pswData, iv: ivData)
         let msgDecrypted = String(data: decrypted!, encoding: .utf8)!
         
         print("DES")
         print("Message: \(msg), Password: \(psw)")
         print("In size: \(msgData.count) Out size: \(crypted!.count)")
+        print("Hex encoded: \(crypted!.hexEncoded())")
         print("Base64 encoded: \(crypted!.base64EncodedString())")
         print("Bytes array: \(crypted!.toBytes())")
         print("Decrypted msg: \(msgDecrypted)")
@@ -34,18 +37,21 @@ class CryptoFacadeTests: XCTestCase {
     
     func testAESCrypto() {
         let msg = "This is a very secured string with numbers: 123456789"
-        let psw = "Password"
+        let psw = "example key 1234"
+        let iv = "87654321"
         
         let msgData = msg.data(using: .utf8)!
         let pswData = psw.data(using: .utf8)!
+        let ivData = iv.data(using: .utf8)!
         
-        let crypted = try? CryptoFacade.aesEncryptData(msgData, usingKey: pswData)
-        let decrypted = try? CryptoFacade.aesDecryptData(crypted!, usingKey: pswData)
+        let crypted = try? CryptoFacade.aesEncryptData(msgData, usingKey: pswData, iv: ivData)
+        let decrypted = try? CryptoFacade.aesDecryptData(crypted!, usingKey: pswData, iv: ivData)
         let msgDecrypted = String(data: decrypted!, encoding: .utf8)!
         
         print("AES")
         print("Message: \(msg), Password: \(psw)")
         print("In size: \(msgData.count) Out size: \(crypted!.count)")
+        print("Hex encoded: \(crypted!.hexEncoded())")
         print("Base64 encoded: \(crypted!.base64EncodedString())")
         print("Bytes array: \(crypted!.toBytes())")
         print("Decrypted msg: \(msgDecrypted)")

@@ -55,10 +55,10 @@
 		465C74221F28881500CD469E /* WirexUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WirexUtils.h; sourceTree = "<group>"; };
 		465C74231F28881500CD469E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		465C74281F28881500CD469E /* WirexUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WirexUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		465C742F1F28881500CD469E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46BF3F251F793FBD00C55058 /* Cryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptor.swift; sourceTree = "<group>"; };
 		46BF3F271F795B3800C55058 /* CryptoFacadeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoFacadeTests.swift; sourceTree = "<group>"; };
 		46BF3F2B1F79731600C55058 /* StringExTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExTests.swift; sourceTree = "<group>"; };
+		46BF3F2D1F79941A00C55058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46CC31E01F727ADB00632B18 /* AtomicBoolean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicBoolean.swift; sourceTree = "<group>"; };
 		46CC31E11F727ADB00632B18 /* DispatchSourceEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchSourceEx.swift; sourceTree = "<group>"; };
 		46CC31E21F727ADB00632B18 /* DispatchTimeEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchTimeEx.swift; sourceTree = "<group>"; };
@@ -142,6 +142,7 @@
 		465C742C1F28881500CD469E /* WirexUtilsTests */ = {
 			isa = PBXGroup;
 			children = (
+				46BF3F2D1F79941A00C55058 /* Info.plist */,
 				46BF3F2B1F79731600C55058 /* StringExTests.swift */,
 				46BF3F271F795B3800C55058 /* CryptoFacadeTests.swift */,
 				46CC32021F727B3000632B18 /* Base58Tests.swift */,
@@ -150,7 +151,6 @@
 				46CC31FE1F727B3000632B18 /* DispatchSourceExTests.swift */,
 				46CC31FF1F727B3000632B18 /* EmailValidatorTests.swift */,
 				46CC32001F727B3000632B18 /* UrlExTests.swift */,
-				465C742F1F28881500CD469E /* Info.plist */,
 			);
 			path = WirexUtilsTests;
 			sourceTree = "<group>";

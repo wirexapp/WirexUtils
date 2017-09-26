@@ -20,7 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (nullable NSData *)AESEncryptData: (NSData *) data usingKey: (NSData* ) key iv: (NSData *) iv error: (NSError **) error;
 + (nullable NSData *)AESDecryptData: (NSData *) data usingKey: (NSData* ) key iv: (NSData *) iv error: (NSError **) error;
-
+    
++ (NSData *)hmacSHA512: (NSString *) data usingKey: (NSString *) key;
+    
 @end
 
 NS_ASSUME_NONNULL_END

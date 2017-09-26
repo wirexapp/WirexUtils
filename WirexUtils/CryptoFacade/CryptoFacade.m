@@ -74,13 +74,22 @@ static void FixKeyLengths(CCAlgorithm algorithm, NSMutableData *keyData, NSMutab
     return ret;
 }
 
-
 + (NSData *)sha256:(NSData *)src {
     unsigned char hash[CC_SHA256_DIGEST_LENGTH];
     CC_SHA256(src.bytes, (CC_LONG)src.length, hash);
     return [NSData dataWithBytes: hash length: CC_SHA256_DIGEST_LENGTH];
 }
     
+#pragma mark -
+
++ (NSData *) hmacSHA512: (NSString *) data usingKey: (NSString *) key {
+    const char *cKey  = [key cStringUsingEncoding:NSASCIIStringEncoding];
+    const char *cData = [data cStringUsingEncoding:NSASCIIStringEncoding];
+    unsigned char cHMAC[CC_SHA512_DIGEST_LENGTH];
+    CCHmac(kCCHmacAlgSHA512, cKey, strlen(cKey), cData, strlen(cData), cHMAC);
+    return [NSData dataWithBytes: cHMAC length: sizeof(cHMAC)];
+}
+
 #pragma mark - cryptor/decryptor
     
 + (NSData *)DESEncryptData: (NSData *) data usingKey: (NSData* ) key iv: (NSData *) iv error: (NSError **) error {

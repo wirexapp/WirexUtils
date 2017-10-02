@@ -39,4 +39,15 @@ class StringExTests: XCTestCase {
         
         XCTAssertEqual(src, str2)
     }
+    
+    func testFormatWithParams() {
+        let params = ["p1" : "1", "p2" : "22", "pp3" : "3333"]
+        
+        XCTAssertEqual(String.format("a {p1} b {p2}", withParams: params), "a 1 b 22")
+        XCTAssertEqual(String.format("a {p1} b {p2} c {pp3}", withParams: params), "a 1 b 22 c 3333")
+        XCTAssertEqual(String.format("a b c", withParams: params), "a b c")
+        XCTAssertEqual(String.format("{p1}{p2}{pp3}", withParams: params), "1223333")
+        XCTAssertEqual(String.format("a {p1} b {p2} c {p3}", withParams: [:]), "a {p1} b {p2} c {p3}")
+        XCTAssertEqual(String.format("", withParams: params), "")
+    }
 }

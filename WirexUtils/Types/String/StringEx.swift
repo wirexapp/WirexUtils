@@ -95,17 +95,52 @@ extension String {
 
 // MARK:
 extension String {
-    
     public static func flag(forCountryCode code: String) -> Character {
         let base = UnicodeScalar("🇦").value - UnicodeScalar("A").value
-    
         var string = ""
         code.uppercased().unicodeScalars.forEach {
             if let scala = UnicodeScalar(base + $0.value) {
                 string.append(String(describing: scala))
             }
         }
-    
         return Character(string)
+    }
+}
+
+// MARK:
+extension String {
+    public static func format(_ string: String, withParams params: [String : String]) -> String {
+        guard let regex = try? NSRegularExpression(pattern: "\\{(.*?)\\}", options: []) else {
+            return string
+        }
+    
+        let range = NSMakeRange(0, string.count)
+        let matches = regex.matches(in: string, options: [], range: range)
+    
+        var resStr = ""
+        var curr = string.startIndex
+    
+        for match in matches {
+            for n in 0..<match.numberOfRanges {
+                let range = match.range(at: n)
+    
+                let s = string.index(string.startIndex, offsetBy: range.location)
+                let e = string.index(string.startIndex, offsetBy: range.location+range.length)
+    
+                let p = string[s..<e]
+                if p.characters.count > 2 {
+                    let pp = String(p[p.index(after: p.startIndex)..<p.index(before: p.endIndex)])
+                    if let v = params[pp]  {
+                        if curr < s {
+                            resStr += string[curr..<s]
+                        }
+                        resStr += v
+                        curr = e
+                    }
+                }
+            }
+        }
+        resStr += string[curr...]
+        return resStr
     }
 }

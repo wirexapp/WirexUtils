@@ -9,8 +9,11 @@
 import XCTest
 import WirexUtils
 
+// Test data generator
+// https://www.freeformatter.com/hmac-generator.html
+
 class CryptoFacadeTests: XCTestCase {
-    
+
     func testMD5() {
         let msg = "This is test string"
         let calculated = "cbc8824b28a863df726d421801084c01"
@@ -32,14 +35,13 @@ class CryptoFacadeTests: XCTestCase {
         let key = "Secret"
         
         let calculated =
-            "380d70a7b29be9a94731fbc21101704fcd8755baf5475c20b2b69c770ee82f85e9f186d78418d6ca89e7601af71e9452b0ed2da923933cebdab135a2f7057c3e"
+        "380d70a7b29be9a94731fbc21101704fcd8755baf5475c20b2b69c770ee82f85e9f186d78418d6ca89e7601af71e9452b0ed2da923933cebdab135a2f7057c3e"
         
         let hmac = CryptoFacade.hmacSHA512(msg, usingKey: key).hexEncoded()
         //print(hmac)
         
         XCTAssertEqual(hmac, calculated)
     }
-    
     
     func testDESCrypto() {
         let msg = "This is a very secured string with numbers: 123456789"
@@ -88,7 +90,4 @@ class CryptoFacadeTests: XCTestCase {
         
         XCTAssertEqual(msg, msgDecrypted)
     }
-    
-    
-    
 }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		461F557D1F861B5A006B1D1D /* SysInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F557C1F861B5A006B1D1D /* SysInfo.swift */; };
+		461F557F1F8637FB006B1D1D /* DeviceName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F557E1F8637FB006B1D1D /* DeviceName.swift */; };
+		461F55811F8639CB006B1D1D /* SysInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F55801F8639CB006B1D1D /* SysInfoTests.swift */; };
 		465C74291F28881500CD469E /* WirexUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465C741F1F28881500CD469E /* WirexUtils.framework */; };
 		465C74301F28881500CD469E /* WirexUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 465C74221F28881500CD469E /* WirexUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46BF3F281F795B3800C55058 /* CryptoFacadeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BF3F271F795B3800C55058 /* CryptoFacadeTests.swift */; };
@@ -50,6 +53,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		461F557C1F861B5A006B1D1D /* SysInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysInfo.swift; sourceTree = "<group>"; };
+		461F557E1F8637FB006B1D1D /* DeviceName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceName.swift; sourceTree = "<group>"; };
+		461F55801F8639CB006B1D1D /* SysInfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysInfoTests.swift; sourceTree = "<group>"; };
 		465C741F1F28881500CD469E /* WirexUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WirexUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		465C74221F28881500CD469E /* WirexUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WirexUtils.h; sourceTree = "<group>"; };
 		465C74231F28881500CD469E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -149,6 +155,7 @@
 				46CC31FE1F727B3000632B18 /* DispatchSourceExTests.swift */,
 				46CC31FF1F727B3000632B18 /* EmailValidatorTests.swift */,
 				46CC32001F727B3000632B18 /* UrlExTests.swift */,
+				461F55801F8639CB006B1D1D /* SysInfoTests.swift */,
 			);
 			path = WirexUtilsTests;
 			sourceTree = "<group>";
@@ -159,6 +166,8 @@
 				46CC31E01F727ADB00632B18 /* AtomicBoolean.swift */,
 				46CC31E11F727ADB00632B18 /* DispatchSourceEx.swift */,
 				46CC31E21F727ADB00632B18 /* DispatchTimeEx.swift */,
+				461F557C1F861B5A006B1D1D /* SysInfo.swift */,
+				461F557E1F8637FB006B1D1D /* DeviceName.swift */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -370,9 +379,11 @@
 				46CC32141F727C6E00632B18 /* DispatchSourceEx.swift in Sources */,
 				46CC32161F727C7800632B18 /* BundleEx.swift in Sources */,
 				46CC32191F727C7800632B18 /* StringEntropy.swift in Sources */,
+				461F557F1F8637FB006B1D1D /* DeviceName.swift in Sources */,
 				46CC32101F727C6700632B18 /* BtcPaymentURI.swift in Sources */,
 				46CC32151F727C6E00632B18 /* DispatchTimeEx.swift in Sources */,
 				46CC320B1F727C6100632B18 /* MulticastDelegate.swift in Sources */,
+				461F557D1F861B5A006B1D1D /* SysInfo.swift in Sources */,
 				46CC32171F727C7800632B18 /* DataEx.swift in Sources */,
 				46CC320C1F727C6100632B18 /* WeakBox.swift in Sources */,
 				46CC32121F727C6A00632B18 /* CryptoFacade.m in Sources */,
@@ -392,6 +403,7 @@
 				46CC32091F727B3000632B18 /* BtcPaymentURITests.swift in Sources */,
 				46CC32041F727B3000632B18 /* DispatchSourceExTests.swift in Sources */,
 				46CC32071F727B3000632B18 /* BtcAddressTests.swift in Sources */,
+				461F55811F8639CB006B1D1D /* SysInfoTests.swift in Sources */,
 				46CC32051F727B3000632B18 /* EmailValidatorTests.swift in Sources */,
 				46BF3F2C1F79731600C55058 /* StringExTests.swift in Sources */,
 				46CC32081F727B3000632B18 /* Base58Tests.swift in Sources */,

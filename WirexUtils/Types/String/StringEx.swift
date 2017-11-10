@@ -11,7 +11,7 @@ import Foundation
 // MARK:
 extension String {
     public func toNumberString() -> String {
-        let numbers = Set("0123456789".characters.map { $0 })
+        let numbers = Set("0123456789".map { $0 })
         let s = self.filter { (c) -> Bool in
             return numbers.contains(c)
         }
@@ -27,12 +27,12 @@ extension String {
     }
     
     public func parseHex() -> [UInt8] {
-        guard self.characters.count > 0 && self.characters.count % 2 == 0 else { return [] }
+        guard self.count > 0 && self.count % 2 == 0 else { return [] }
         
-        var data = [UInt8](repeating: 0, count: self.characters.count/2)
+        var data = [UInt8](repeating: 0, count: self.count/2)
         var byteLiteral = ""
         
-        for (index, character) in self.characters.enumerated() {
+        for (index, character) in self.enumerated() {
             if index % 2 == 0 {
                 byteLiteral = String(character)
             } else {
@@ -128,7 +128,7 @@ extension String {
                 let e = string.index(string.startIndex, offsetBy: range.location+range.length)
     
                 let p = string[s..<e]
-                if p.characters.count > 2 {
+                if p.count > 2 {
                     let pp = String(p[p.index(after: p.startIndex)..<p.index(before: p.endIndex)])
                     if let v = params[pp]  {
                         if curr < s {

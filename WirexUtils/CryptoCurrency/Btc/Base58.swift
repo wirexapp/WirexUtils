@@ -27,7 +27,7 @@ public struct Base58 {
     }
         
     public static func decode(_ s: String) -> [UInt8] {
-        let chars = s.characters
+        let chars = s
         var index = chars.startIndex
         
         // Skip & count leading '1's
@@ -85,8 +85,8 @@ public struct Base58 {
         static let symbs = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz"
         
         static func pos(forChar c: Character) -> Int {
-            if let indx = symbs.characters.index(of: c) {
-                return symbs.characters.distance(from: symbs.characters.startIndex, to: indx)
+            if let indx = symbs.index(of: c) {
+                return symbs.distance(from: symbs.startIndex, to: indx)
             }
             
             return -1

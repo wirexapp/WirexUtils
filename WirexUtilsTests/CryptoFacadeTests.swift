@@ -38,8 +38,19 @@ class CryptoFacadeTests: XCTestCase {
         "380d70a7b29be9a94731fbc21101704fcd8755baf5475c20b2b69c770ee82f85e9f186d78418d6ca89e7601af71e9452b0ed2da923933cebdab135a2f7057c3e"
         
         let hmac = CryptoFacade.hmacSHA512(msg, usingKey: key).hexEncoded()
-        //print(hmac)
         
+        XCTAssertEqual(hmac, calculated)
+    }
+    
+    func testHMACSHA512WithUnicode() {
+        let msg = "This is unicode 💩"
+        let key = "Secret"
+    
+        let calculated =
+        "c9e6df20a9788a168d1d6b11e0df84baecce64c38a558e2214f9e488772e09330bcf5844598e135f3a1e5e4c7af647300dc371617baa5188d01d031653772aef"
+    
+        let hmac = CryptoFacade.hmacSHA512(msg, usingKey: key).hexEncoded()
+    
         XCTAssertEqual(hmac, calculated)
     }
     

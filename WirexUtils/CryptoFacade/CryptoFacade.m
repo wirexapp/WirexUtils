@@ -83,8 +83,8 @@ static void FixKeyLengths(CCAlgorithm algorithm, NSMutableData *keyData, NSMutab
 #pragma mark -
 
 + (NSData *) hmacSHA512: (NSString *) data usingKey: (NSString *) key {
-    const char *cKey  = [key cStringUsingEncoding:NSASCIIStringEncoding];
-    const char *cData = [data cStringUsingEncoding:NSASCIIStringEncoding];
+    const char *cKey  = [key cStringUsingEncoding:NSUTF8StringEncoding];
+    const char *cData = [data cStringUsingEncoding:NSUTF8StringEncoding];
     unsigned char cHMAC[CC_SHA512_DIGEST_LENGTH];
     CCHmac(kCCHmacAlgSHA512, cKey, strlen(cKey), cData, strlen(cData), cHMAC);
     return [NSData dataWithBytes: cHMAC length: sizeof(cHMAC)];

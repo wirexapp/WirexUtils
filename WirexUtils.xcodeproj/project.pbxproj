@@ -40,6 +40,7 @@
 		46CC321B1F727C7800632B18 /* UnicodeScalarEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31EB1F727ADB00632B18 /* UnicodeScalarEx.swift */; };
 		46CC321C1F727C7800632B18 /* UrlEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31EC1F727ADB00632B18 /* UrlEx.swift */; };
 		46CC321D1F727C7B00632B18 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31EE1F727ADB00632B18 /* EmailValidator.swift */; };
+		BDFBC13C2074D5B60051AD73 /* LtcHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFBC13B2074D5B60051AD73 /* LtcHelperUrls.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		46CC32011F727B3000632B18 /* BtcAddressTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtcAddressTests.swift; sourceTree = "<group>"; };
 		46CC32021F727B3000632B18 /* Base58Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base58Tests.swift; sourceTree = "<group>"; };
 		46CC32031F727B3000632B18 /* BtcPaymentURITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtcPaymentURITests.swift; sourceTree = "<group>"; };
+		BDFBC13B2074D5B60051AD73 /* LtcHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LtcHelperUrls.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +224,7 @@
 		46CC31F21F727ADB00632B18 /* CryptoCurrency */ = {
 			isa = PBXGroup;
 			children = (
+				BDFBC13A2074D5810051AD73 /* Ltc */,
 				46CC31F31F727ADB00632B18 /* Btc */,
 			);
 			path = CryptoCurrency;
@@ -254,6 +257,14 @@
 				46CC31FB1F727ADB00632B18 /* WeakBox.swift */,
 			);
 			path = MulticastDelegate;
+			sourceTree = "<group>";
+		};
+		BDFBC13A2074D5810051AD73 /* Ltc */ = {
+			isa = PBXGroup;
+			children = (
+				BDFBC13B2074D5B60051AD73 /* LtcHelperUrls.swift */,
+			);
+			path = Ltc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,6 +399,7 @@
 				46CC320C1F727C6100632B18 /* WeakBox.swift in Sources */,
 				46CC32121F727C6A00632B18 /* CryptoFacade.m in Sources */,
 				46CC321A1F727C7800632B18 /* StringEx.swift in Sources */,
+				BDFBC13C2074D5B60051AD73 /* LtcHelperUrls.swift in Sources */,
 				46CC321D1F727C7B00632B18 /* EmailValidator.swift in Sources */,
 				46CC32131F727C6E00632B18 /* AtomicBoolean.swift in Sources */,
 				46CC321B1F727C7800632B18 /* UnicodeScalarEx.swift in Sources */,

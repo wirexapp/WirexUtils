@@ -1,5 +1,5 @@
 //
-//  BtcPaymentURI.swift
+//  CryptoPaymentURI.swift
 //  WirexUtils
 //
 //  Created by Eugen Fedchenko on 6/29/17.
@@ -8,10 +8,16 @@
 
 import Foundation
 
-public struct BtcPaymentURI {
+public struct CryptoPaymentURI {
+    
+    public enum Scheme: String {
+        case btc = "bitcoin"
+        case ltc = "litecoin"
+
+        public var str: String { return self.rawValue }
+    }
     
     public enum Fields: String {
-        case scheme = "bitcoin"
         case amount = "amount"
         case label = "label"
         case msg = "message"
@@ -21,6 +27,7 @@ public struct BtcPaymentURI {
     
     public let address: String
     public let parameters: [String : String]
+    public let scheme: Scheme
     
     public var amount: Decimal? {
         if let s = parameters[Fields.amount.str] {
@@ -37,7 +44,8 @@ public struct BtcPaymentURI {
         return parameters[Fields.msg.str]
     }
     
-    public init(address: String, amount: Decimal? = nil, label: String? = nil, message: String? = nil, params: [String : String]? = nil) {
+    public init(scheme: Scheme, address: String, amount: Decimal? = nil, label: String? = nil, message: String? = nil, params: [String : String]? = nil) {
+        self.scheme = scheme
         self.address = address
         
         var pp = Dictionary<String, String>()
@@ -62,9 +70,10 @@ public struct BtcPaymentURI {
     }
     
     public init?(fromStr s: String) {
-        guard let components = URLComponents(string: s), let scheme = components.scheme else { return nil }
-        guard scheme == Fields.scheme.str, !components.path.isEmpty else { return nil }
+        guard let components = URLComponents(string: s), let scheme = Scheme(rawValue: components.scheme ?? "") else { return nil }
+        guard !components.path.isEmpty else { return nil }
         
+        self.scheme = scheme
         self.address = components.path
         self.parameters = components.dictRepr
     }
@@ -72,7 +81,7 @@ public struct BtcPaymentURI {
     public var str: String {
         var c = URLComponents()
         
-        c.scheme = Fields.scheme.str
+        c.scheme = self.scheme.str
         c.path = self.address
         
         let qi = parameters.map { (key, value) -> URLQueryItem in

@@ -26,7 +26,7 @@
 		46CC320D1F727C6700632B18 /* Base58.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31F41F727ADB00632B18 /* Base58.swift */; };
 		46CC320E1F727C6700632B18 /* BtcAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31F51F727ADB00632B18 /* BtcAddress.swift */; };
 		46CC320F1F727C6700632B18 /* BtcHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31F61F727ADB00632B18 /* BtcHelperUrls.swift */; };
-		46CC32101F727C6700632B18 /* BtcPaymentURI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31F71F727ADB00632B18 /* BtcPaymentURI.swift */; };
+		46CC32101F727C6700632B18 /* CryptoPaymentURI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31F71F727ADB00632B18 /* CryptoPaymentURI.swift */; };
 		46CC32111F727C6A00632B18 /* CryptoFacade.h in Headers */ = {isa = PBXBuildFile; fileRef = 46CC31F01F727ADB00632B18 /* CryptoFacade.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46CC32121F727C6A00632B18 /* CryptoFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31F11F727ADB00632B18 /* CryptoFacade.m */; };
 		46CC32131F727C6E00632B18 /* AtomicBoolean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31E01F727ADB00632B18 /* AtomicBoolean.swift */; };
@@ -80,7 +80,7 @@
 		46CC31F41F727ADB00632B18 /* Base58.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base58.swift; sourceTree = "<group>"; };
 		46CC31F51F727ADB00632B18 /* BtcAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtcAddress.swift; sourceTree = "<group>"; };
 		46CC31F61F727ADB00632B18 /* BtcHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtcHelperUrls.swift; sourceTree = "<group>"; };
-		46CC31F71F727ADB00632B18 /* BtcPaymentURI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtcPaymentURI.swift; sourceTree = "<group>"; };
+		46CC31F71F727ADB00632B18 /* CryptoPaymentURI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoPaymentURI.swift; sourceTree = "<group>"; };
 		46CC31FA1F727ADB00632B18 /* MulticastDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
 		46CC31FB1F727ADB00632B18 /* WeakBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakBox.swift; sourceTree = "<group>"; };
 		46CC31FC1F727ADB00632B18 /* Require.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Require.swift; sourceTree = "<group>"; };
@@ -236,7 +236,7 @@
 				46CC31F41F727ADB00632B18 /* Base58.swift */,
 				46CC31F51F727ADB00632B18 /* BtcAddress.swift */,
 				46CC31F61F727ADB00632B18 /* BtcHelperUrls.swift */,
-				46CC31F71F727ADB00632B18 /* BtcPaymentURI.swift */,
+				46CC31F71F727ADB00632B18 /* CryptoPaymentURI.swift */,
 			);
 			path = Btc;
 			sourceTree = "<group>";
@@ -391,7 +391,7 @@
 				46CC32161F727C7800632B18 /* BundleEx.swift in Sources */,
 				46CC32191F727C7800632B18 /* StringEntropy.swift in Sources */,
 				461F557F1F8637FB006B1D1D /* DeviceName.swift in Sources */,
-				46CC32101F727C6700632B18 /* BtcPaymentURI.swift in Sources */,
+				46CC32101F727C6700632B18 /* CryptoPaymentURI.swift in Sources */,
 				46CC32151F727C6E00632B18 /* DispatchTimeEx.swift in Sources */,
 				46CC320B1F727C6100632B18 /* MulticastDelegate.swift in Sources */,
 				461F557D1F861B5A006B1D1D /* SysInfo.swift in Sources */,

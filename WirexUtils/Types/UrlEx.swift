@@ -37,7 +37,7 @@ extension URL {
 
 extension URLComponents {
     public var dictRepr:  [String: String] {
-        return self.queryItems?.flatMap { $0.dictRepr }.reduce([:], +) ?? [:]
+        return self.queryItems?.compactMap { $0.dictRepr }.reduce([:], +) ?? [:]
     }
 }
 

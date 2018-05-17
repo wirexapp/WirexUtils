@@ -22,14 +22,15 @@ extension Data {
     
     public static func xor(data: Data, with key: Data) -> Data {
         var xorData = data
+        let xorDataCount = xorData.count
         
         xorData.withUnsafeMutableBytes { (start: UnsafeMutablePointer<UInt8>) -> Void in
             key.withUnsafeBytes { (keyStart: UnsafePointer<UInt8>) -> Void in
-                let b = UnsafeMutableBufferPointer<UInt8>(start: start, count: xorData.count)
+                let b = UnsafeMutableBufferPointer<UInt8>(start: start, count: xorDataCount)
                 let k = UnsafeBufferPointer<UInt8>(start: keyStart, count: data.count)
                 
                 let length = key.count
-                for i in 0..<xorData.count {
+                for i in 0..<xorDataCount {
                     b[i] ^= k[i % length]
                 }
             }

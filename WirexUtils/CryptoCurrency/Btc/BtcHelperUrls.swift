@@ -12,4 +12,8 @@ public struct BtcHelperUrls {
     public static func tradeblockTx(hash: String) -> URL? {
         return URL(string: "https://tradeblock.com/bitcoin/tx/" + hash)
     }
+    
+    public static func blockchypherTx(hash: String) -> URL? {
+        return URL(string: "https://live.blockcypher.com/btc/tx/" + hash)
+    }
 }

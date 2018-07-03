@@ -13,6 +13,7 @@ public struct CryptoPaymentURI {
     public enum Scheme: String {
         case btc = "bitcoin"
         case ltc = "litecoin"
+        case xrp = "ripple"
 
         public var str: String { return self.rawValue }
     }
@@ -21,6 +22,7 @@ public struct CryptoPaymentURI {
         case amount = "amount"
         case label = "label"
         case msg = "message"
+        case destinationTag = "dt"
         
         public var str: String { return self.rawValue }
     }
@@ -42,6 +44,10 @@ public struct CryptoPaymentURI {
     
     public var message: String? {
         return parameters[Fields.msg.str]
+    }
+
+    public var destinationTag: String? {
+        return parameters[Fields.destinationTag.str]
     }
     
     public init(scheme: Scheme, address: String, amount: Decimal? = nil, label: String? = nil, message: String? = nil, params: [String : String]? = nil) {

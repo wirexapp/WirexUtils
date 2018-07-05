@@ -8,16 +8,22 @@
 
 import Foundation
 
+private struct XprHelperUrlsConstants {
+    static let rippleScheme = "ripple:"
+    static let tagArgument = "?dt="
+    static let baseInfoToolUrlString = "https://ripple.com/build/ripple-info-tool/#"
+}
+
 public struct XprHelperUrls {
     public static func rippleInfoToolTx(hash: String) -> URL? {
-        return URL(string: "https://ripple.com/build/ripple-info-tool/#" + hash)
+        return URL(string: XprHelperUrlsConstants.baseInfoToolUrlString + hash)
     }
     
     public static func rippleLink(address: String, destinationTag: String? = nil) -> String {
-        let link = "ripple:" + address.trimmingCharacters(in: .whitespacesAndNewlines)
+        let link = XprHelperUrlsConstants.rippleScheme + address.trimmingCharacters(in: .whitespacesAndNewlines)
         
         if let tag = destinationTag?.trimmingCharacters(in: .whitespacesAndNewlines) {
-            return link + "?dt=" + tag
+            return link + XprHelperUrlsConstants.tagArgument + tag
         } else {
             return link
         }

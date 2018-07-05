@@ -8,12 +8,16 @@
 
 import Foundation
 
+private struct LtcHelperUrlsConstants {
+    static let litecoinScheme = "litecoin:"
+}
+
 public struct LtcHelperUrls {
     public static func tradeblockTx(hash: String) -> URL? {
         return URL(string: "https://live.blockcypher.com/ltc/tx/" + hash)
     }
     
     public static func litecoinLink(address: String) -> String {
-        return "litecoin:" + address.trimmingCharacters(in: .whitespacesAndNewlines)
+        return LtcHelperUrlsConstants.litecoinScheme + address.trimmingCharacters(in: .whitespacesAndNewlines)
     }
 }

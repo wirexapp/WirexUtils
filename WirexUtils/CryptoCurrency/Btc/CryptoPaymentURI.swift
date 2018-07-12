@@ -14,7 +14,7 @@ public struct CryptoPaymentURI {
         case btc = "bitcoin"
         case ltc = "litecoin"
         case xrp = "ripple"
-        
+
         public var str: String { return self.rawValue }
     }
     
@@ -45,7 +45,7 @@ public struct CryptoPaymentURI {
     public var message: String? {
         return parameters[Fields.msg.str]
     }
-    
+
     public var destinationTag: String? {
         return parameters[Fields.destinationTag.str]
     }
@@ -76,8 +76,7 @@ public struct CryptoPaymentURI {
     }
     
     public init?(fromStr s: String) {
-        guard let components = URLComponents(string: s) else { return nil }
-        guard !components.path.isEmpty else { return nil }
+        guard let components = URLComponents(string: s), !components.path.isEmpty else { return nil }
         
         self.scheme = Scheme(rawValue: components.scheme?.lowercased() ?? "")
         self.address = components.path

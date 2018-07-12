@@ -30,8 +30,8 @@ class CryptoHelperUrls: XCTestCase {
     }
     
     func testrippleInfoToolTxUrl() {
-        let url = XprHelperUrls.rippleInfoToolTx(hash: "7138341640E43809E989FFC45DA072EE5A3F4778D5F1605CF269674F378A5FAD")
+        let url = XprHelperUrls.xrpChartsTx(hash:  "081E7626F9073A168D04A52B50F361764DEA87AAD9736BE4524EEB9E718B200C")
         
-        XCTAssertEqual(url?.absoluteString, "https://ripple.com/build/ripple-info-tool/#7138341640E43809E989FFC45DA072EE5A3F4778D5F1605CF269674F378A5FAD")
+        XCTAssertEqual(url?.absoluteString, "https://xrpcharts.ripple.com/#/transactions/081E7626F9073A168D04A52B50F361764DEA87AAD9736BE4524EEB9E718B200C")
     }
 }

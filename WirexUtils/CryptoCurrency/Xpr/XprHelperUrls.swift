@@ -11,12 +11,12 @@ import Foundation
 private struct XprHelperUrlsConstants {
     static let rippleScheme = "ripple:"
     static let tagArgument = "?dt="
-    static let baseInfoToolUrlString = "https://ripple.com/build/ripple-info-tool/#"
+    static let baseXrpChartsUrlString = "https://xrpcharts.ripple.com/#/transactions/"
 }
 
 public struct XprHelperUrls {
-    public static func rippleInfoToolTx(hash: String) -> URL? {
-        return URL(string: XprHelperUrlsConstants.baseInfoToolUrlString + hash)
+    public static func xrpChartsTx(hash: String) -> URL? {
+        return URL(string: XprHelperUrlsConstants.baseXrpChartsUrlString + hash)
     }
     
     public static func rippleLink(address: String, destinationTag: String? = nil) -> String {

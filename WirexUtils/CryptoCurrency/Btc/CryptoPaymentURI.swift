@@ -76,7 +76,8 @@ public struct CryptoPaymentURI {
     }
     
     public init?(fromStr s: String) {
-        guard let components = URLComponents(string: s), !components.path.isEmpty else { return nil }
+        let urlString = s.components(separatedBy: .whitespacesAndNewlines).joined()
+        guard let components = URLComponents(string: urlString), !components.path.isEmpty else { return nil }
         
         self.scheme = Scheme(rawValue: components.scheme?.lowercased() ?? "")
         self.address = components.path

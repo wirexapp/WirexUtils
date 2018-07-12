@@ -29,7 +29,7 @@ public struct CryptoPaymentURI {
     
     public let address: String
     public let parameters: [String : String]
-    public let scheme: Scheme
+    public let scheme: Scheme?
     
     public var amount: Decimal? {
         if let s = parameters[Fields.amount.str] {
@@ -76,10 +76,9 @@ public struct CryptoPaymentURI {
     }
     
     public init?(fromStr s: String) {
-        guard let components = URLComponents(string: s), let scheme = Scheme(rawValue: components.scheme ?? "") else { return nil }
-        guard !components.path.isEmpty else { return nil }
+        guard let components = URLComponents(string: s), !components.path.isEmpty else { return nil }
         
-        self.scheme = scheme
+        self.scheme = Scheme(rawValue: components.scheme?.lowercased() ?? "")
         self.address = components.path
         self.parameters = components.dictRepr
     }
@@ -87,7 +86,7 @@ public struct CryptoPaymentURI {
     public var str: String {
         var c = URLComponents()
         
-        c.scheme = self.scheme.str
+        c.scheme = self.scheme?.str ?? ""
         c.path = self.address
         
         let qi = parameters.map { (key, value) -> URLQueryItem in

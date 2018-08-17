@@ -39,6 +39,7 @@
 		46CC321B1F727C7800632B18 /* UnicodeScalarEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31EB1F727ADB00632B18 /* UnicodeScalarEx.swift */; };
 		46CC321C1F727C7800632B18 /* UrlEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31EC1F727ADB00632B18 /* UrlEx.swift */; };
 		46CC321D1F727C7B00632B18 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31EE1F727ADB00632B18 /* EmailValidator.swift */; };
+		A6A2678E2126FADA008BAF5C /* EthHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2678D2126FADA008BAF5C /* EthHelperUrls.swift */; };
 		BD8D4E3620EE367E00487230 /* XprHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8D4E3520EE367E00487230 /* XprHelperUrls.swift */; };
 		BD8D4E3820EE519C00487230 /* CryptoHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8D4E3720EE519C00487230 /* CryptoHelperUrls.swift */; };
 		BDFBC13C2074D5B60051AD73 /* LtcHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFBC13B2074D5B60051AD73 /* LtcHelperUrls.swift */; };
@@ -90,6 +91,7 @@
 		46CC32011F727B3000632B18 /* BtcAddressTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtcAddressTests.swift; sourceTree = "<group>"; };
 		46CC32021F727B3000632B18 /* Base58Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base58Tests.swift; sourceTree = "<group>"; };
 		46CC32031F727B3000632B18 /* BtcPaymentURITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtcPaymentURITests.swift; sourceTree = "<group>"; };
+		A6A2678D2126FADA008BAF5C /* EthHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthHelperUrls.swift; sourceTree = "<group>"; };
 		BD8D4E3520EE367E00487230 /* XprHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XprHelperUrls.swift; sourceTree = "<group>"; };
 		BD8D4E3720EE519C00487230 /* CryptoHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoHelperUrls.swift; sourceTree = "<group>"; };
 		BDFBC13B2074D5B60051AD73 /* LtcHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LtcHelperUrls.swift; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 		46CC31F21F727ADB00632B18 /* CryptoCurrency */ = {
 			isa = PBXGroup;
 			children = (
+				A6A2678C2126FAC1008BAF5C /* Eth */,
 				BD8D4E3420EE363600487230 /* Xpr */,
 				BDFBC13A2074D5810051AD73 /* Ltc */,
 				46CC31F31F727ADB00632B18 /* Btc */,
@@ -260,6 +263,14 @@
 				46CC31FB1F727ADB00632B18 /* WeakBox.swift */,
 			);
 			path = MulticastDelegate;
+			sourceTree = "<group>";
+		};
+		A6A2678C2126FAC1008BAF5C /* Eth */ = {
+			isa = PBXGroup;
+			children = (
+				A6A2678D2126FADA008BAF5C /* EthHelperUrls.swift */,
+			);
+			path = Eth;
 			sourceTree = "<group>";
 		};
 		BD8D4E3420EE363600487230 /* Xpr */ = {
@@ -393,6 +404,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6A2678E2126FADA008BAF5C /* EthHelperUrls.swift in Sources */,
 				46CC321C1F727C7800632B18 /* UrlEx.swift in Sources */,
 				46CC320A1F727C6100632B18 /* Require.swift in Sources */,
 				46CC320F1F727C6700632B18 /* BtcHelperUrls.swift in Sources */,

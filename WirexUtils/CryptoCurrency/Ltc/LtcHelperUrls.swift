@@ -8,7 +8,7 @@
 
 import Foundation
 
-private struct LtcHelperUrlsConstants {
+private enum LtcHelperUrlsConstants {
     static let litecoinScheme = "litecoin:"
 }
 

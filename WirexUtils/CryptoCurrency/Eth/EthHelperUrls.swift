@@ -8,9 +8,10 @@
 
 import Foundation
 
-private struct EthHelperUrlsConstants {
+private enum EthHelperUrlsConstants {
     static let ethBaseTxUrl = "https://etherscan.io/tx/"
     static let testnetBaseTxUrl = "https://kovan.etherscan.io/tx/"
+    static let ethereumScheme = "ether:"
 }
 
 public struct EthHelperUrls {
@@ -20,5 +21,9 @@ public struct EthHelperUrls {
 
     public static func ethTestnetChartsTx(hash: String) -> URL? {
         return URL(string: EthHelperUrlsConstants.testnetBaseTxUrl + hash)
+    }
+    
+    public static func ethereumLink(address: String) -> String {
+        return EthHelperUrlsConstants.ethereumScheme + address.trimmingCharacters(in: .whitespacesAndNewlines)
     }
 }

@@ -8,6 +8,10 @@
 
 import Foundation
 
+private enum BtcHelperUrlsConstants {
+    static let bitcoinScheme = "bitcoin:"
+}
+
 public struct BtcHelperUrls {
     public static func tradeblockTx(hash: String) -> URL? {
         return URL(string: "https://tradeblock.com/bitcoin/tx/" + hash)
@@ -15,5 +19,9 @@ public struct BtcHelperUrls {
     
     public static func blockcypherTx(hash: String) -> URL? {
         return URL(string: "https://live.blockcypher.com/btc/tx/" + hash)
+    }
+    
+    public static func bitcoinLink(address: String) -> String {
+        return BtcHelperUrlsConstants.bitcoinScheme + address.trimmingCharacters(in: .whitespacesAndNewlines)
     }
 }

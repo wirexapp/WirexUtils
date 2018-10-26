@@ -8,7 +8,7 @@
 
 import Foundation
 
-private struct XprHelperUrlsConstants {
+private enum XprHelperUrlsConstants {
     static let rippleScheme = "ripple:"
     static let tagArgument = "?dt="
     static let baseXrpChartsUrlString = "https://xrpcharts.ripple.com/#/transactions/"

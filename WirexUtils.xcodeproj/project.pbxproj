@@ -40,6 +40,8 @@
 		46CC321C1F727C7800632B18 /* UrlEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31EC1F727ADB00632B18 /* UrlEx.swift */; };
 		46CC321D1F727C7B00632B18 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31EE1F727ADB00632B18 /* EmailValidator.swift */; };
 		A6A2678E2126FADA008BAF5C /* EthHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2678D2126FADA008BAF5C /* EthHelperUrls.swift */; };
+		B1B87F7221ADB04400593D9D /* PasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B87F7121ADB04400593D9D /* PasswordValidator.swift */; };
+		B1B87F7421ADB0E100593D9D /* NSRegularExpressionEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B87F7321ADB0E100593D9D /* NSRegularExpressionEx.swift */; };
 		BD8D4E3620EE367E00487230 /* XprHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8D4E3520EE367E00487230 /* XprHelperUrls.swift */; };
 		BD8D4E3820EE519C00487230 /* CryptoHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8D4E3720EE519C00487230 /* CryptoHelperUrls.swift */; };
 		BDFBC13C2074D5B60051AD73 /* LtcHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFBC13B2074D5B60051AD73 /* LtcHelperUrls.swift */; };
@@ -92,6 +94,8 @@
 		46CC32021F727B3000632B18 /* Base58Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base58Tests.swift; sourceTree = "<group>"; };
 		46CC32031F727B3000632B18 /* BtcPaymentURITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtcPaymentURITests.swift; sourceTree = "<group>"; };
 		A6A2678D2126FADA008BAF5C /* EthHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthHelperUrls.swift; sourceTree = "<group>"; };
+		B1B87F7121ADB04400593D9D /* PasswordValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidator.swift; sourceTree = "<group>"; };
+		B1B87F7321ADB0E100593D9D /* NSRegularExpressionEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSRegularExpressionEx.swift; sourceTree = "<group>"; };
 		BD8D4E3520EE367E00487230 /* XprHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XprHelperUrls.swift; sourceTree = "<group>"; };
 		BD8D4E3720EE519C00487230 /* CryptoHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoHelperUrls.swift; sourceTree = "<group>"; };
 		BDFBC13B2074D5B60051AD73 /* LtcHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LtcHelperUrls.swift; sourceTree = "<group>"; };
@@ -186,6 +190,7 @@
 				46CC31E61F727ADB00632B18 /* Date */,
 				46CC31E81F727ADB00632B18 /* String */,
 				46CC31EC1F727ADB00632B18 /* UrlEx.swift */,
+				B1B87F7321ADB0E100593D9D /* NSRegularExpressionEx.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -212,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				46CC31EE1F727ADB00632B18 /* EmailValidator.swift */,
+				B1B87F7121ADB04400593D9D /* PasswordValidator.swift */,
 			);
 			path = Validators;
 			sourceTree = "<group>";
@@ -415,6 +421,7 @@
 				46CC32191F727C7800632B18 /* StringEntropy.swift in Sources */,
 				461F557F1F8637FB006B1D1D /* DeviceName.swift in Sources */,
 				46CC32101F727C6700632B18 /* CryptoPaymentURI.swift in Sources */,
+				B1B87F7421ADB0E100593D9D /* NSRegularExpressionEx.swift in Sources */,
 				46CC32151F727C6E00632B18 /* DispatchTimeEx.swift in Sources */,
 				46CC320B1F727C6100632B18 /* MulticastDelegate.swift in Sources */,
 				BD8D4E3620EE367E00487230 /* XprHelperUrls.swift in Sources */,
@@ -423,6 +430,7 @@
 				46CC320C1F727C6100632B18 /* WeakBox.swift in Sources */,
 				46CC32121F727C6A00632B18 /* CryptoFacade.m in Sources */,
 				46CC321A1F727C7800632B18 /* StringEx.swift in Sources */,
+				B1B87F7221ADB04400593D9D /* PasswordValidator.swift in Sources */,
 				BDFBC13C2074D5B60051AD73 /* LtcHelperUrls.swift in Sources */,
 				46CC321D1F727C7B00632B18 /* EmailValidator.swift in Sources */,
 				46CC321B1F727C7800632B18 /* UnicodeScalarEx.swift in Sources */,

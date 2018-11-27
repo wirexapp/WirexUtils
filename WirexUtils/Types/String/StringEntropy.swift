@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum PasswordStrength {
+public enum PasswordEntropyStrength {
     case weakest
     case weak
     case reasonable
@@ -16,7 +16,7 @@ public enum PasswordStrength {
     case strongest
     
     
-    public static func strength(forString s: String) -> PasswordStrength {
+    public static func strength(forString s: String) -> PasswordEntropyStrength {
         let entropy = s.entropy()
         
         if entropy < 28 {

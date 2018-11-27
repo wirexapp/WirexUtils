@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   s.name             = "WirexUtils"
   s.summary          = "WirexUtils is a set of utility functions & classes used in Wirex iOS client."
-  s.version          = "1.0.6"
+  s.version          = "1.0.7"
   s.homepage         = "https://wirexapp.com"
   s.license          = 'MIT'
   s.author           = { "Eugen Fedchenko" => "eugenf78@gmail.com" }

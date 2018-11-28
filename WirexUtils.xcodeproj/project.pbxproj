@@ -44,6 +44,7 @@
 		B1B87F7421ADB0E100593D9D /* NSRegularExpressionEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B87F7321ADB0E100593D9D /* NSRegularExpressionEx.swift */; };
 		BD8D4E3620EE367E00487230 /* XprHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8D4E3520EE367E00487230 /* XprHelperUrls.swift */; };
 		BD8D4E3820EE519C00487230 /* CryptoHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8D4E3720EE519C00487230 /* CryptoHelperUrls.swift */; };
+		BDAB020E21AF169300800DAB /* WavesHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB020D21AF169300800DAB /* WavesHelperUrls.swift */; };
 		BDFBC13C2074D5B60051AD73 /* LtcHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFBC13B2074D5B60051AD73 /* LtcHelperUrls.swift */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +99,7 @@
 		B1B87F7321ADB0E100593D9D /* NSRegularExpressionEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSRegularExpressionEx.swift; sourceTree = "<group>"; };
 		BD8D4E3520EE367E00487230 /* XprHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XprHelperUrls.swift; sourceTree = "<group>"; };
 		BD8D4E3720EE519C00487230 /* CryptoHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoHelperUrls.swift; sourceTree = "<group>"; };
+		BDAB020D21AF169300800DAB /* WavesHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WavesHelperUrls.swift; sourceTree = "<group>"; };
 		BDFBC13B2074D5B60051AD73 /* LtcHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LtcHelperUrls.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -234,6 +236,7 @@
 		46CC31F21F727ADB00632B18 /* CryptoCurrency */ = {
 			isa = PBXGroup;
 			children = (
+				BDAB020C21AF166E00800DAB /* Waves */,
 				A6A2678C2126FAC1008BAF5C /* Eth */,
 				BD8D4E3420EE363600487230 /* Xpr */,
 				BDFBC13A2074D5810051AD73 /* Ltc */,
@@ -285,6 +288,14 @@
 				BD8D4E3520EE367E00487230 /* XprHelperUrls.swift */,
 			);
 			path = Xpr;
+			sourceTree = "<group>";
+		};
+		BDAB020C21AF166E00800DAB /* Waves */ = {
+			isa = PBXGroup;
+			children = (
+				BDAB020D21AF169300800DAB /* WavesHelperUrls.swift */,
+			);
+			path = Waves;
 			sourceTree = "<group>";
 		};
 		BDFBC13A2074D5810051AD73 /* Ltc */ = {
@@ -428,6 +439,7 @@
 				461F557D1F861B5A006B1D1D /* SysInfo.swift in Sources */,
 				46CC32171F727C7800632B18 /* DataEx.swift in Sources */,
 				46CC320C1F727C6100632B18 /* WeakBox.swift in Sources */,
+				BDAB020E21AF169300800DAB /* WavesHelperUrls.swift in Sources */,
 				46CC32121F727C6A00632B18 /* CryptoFacade.m in Sources */,
 				46CC321A1F727C7800632B18 /* StringEx.swift in Sources */,
 				B1B87F7221ADB04400593D9D /* PasswordValidator.swift in Sources */,

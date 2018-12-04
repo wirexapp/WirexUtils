@@ -39,6 +39,7 @@
 		46CC321B1F727C7800632B18 /* UnicodeScalarEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31EB1F727ADB00632B18 /* UnicodeScalarEx.swift */; };
 		46CC321C1F727C7800632B18 /* UrlEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31EC1F727ADB00632B18 /* UrlEx.swift */; };
 		46CC321D1F727C7B00632B18 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CC31EE1F727ADB00632B18 /* EmailValidator.swift */; };
+		4CDA698B21B6B7A100AFCECC /* CryptoAddressValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDA698A21B6B7A100AFCECC /* CryptoAddressValidator.swift */; };
 		A6A2678E2126FADA008BAF5C /* EthHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2678D2126FADA008BAF5C /* EthHelperUrls.swift */; };
 		B1B87F7221ADB04400593D9D /* PasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B87F7121ADB04400593D9D /* PasswordValidator.swift */; };
 		B1B87F7421ADB0E100593D9D /* NSRegularExpressionEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B87F7321ADB0E100593D9D /* NSRegularExpressionEx.swift */; };
@@ -94,6 +95,7 @@
 		46CC32011F727B3000632B18 /* BtcAddressTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtcAddressTests.swift; sourceTree = "<group>"; };
 		46CC32021F727B3000632B18 /* Base58Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base58Tests.swift; sourceTree = "<group>"; };
 		46CC32031F727B3000632B18 /* BtcPaymentURITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BtcPaymentURITests.swift; sourceTree = "<group>"; };
+		4CDA698A21B6B7A100AFCECC /* CryptoAddressValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAddressValidator.swift; sourceTree = "<group>"; };
 		A6A2678D2126FADA008BAF5C /* EthHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthHelperUrls.swift; sourceTree = "<group>"; };
 		B1B87F7121ADB04400593D9D /* PasswordValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidator.swift; sourceTree = "<group>"; };
 		B1B87F7321ADB0E100593D9D /* NSRegularExpressionEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSRegularExpressionEx.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 				BD8D4E3420EE363600487230 /* Xpr */,
 				BDFBC13A2074D5810051AD73 /* Ltc */,
 				46CC31F31F727ADB00632B18 /* Btc */,
+				4CDA698A21B6B7A100AFCECC /* CryptoAddressValidator.swift */,
 			);
 			path = CryptoCurrency;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 				46CC321A1F727C7800632B18 /* StringEx.swift in Sources */,
 				B1B87F7221ADB04400593D9D /* PasswordValidator.swift in Sources */,
 				BDFBC13C2074D5B60051AD73 /* LtcHelperUrls.swift in Sources */,
+				4CDA698B21B6B7A100AFCECC /* CryptoAddressValidator.swift in Sources */,
 				46CC321D1F727C7B00632B18 /* EmailValidator.swift in Sources */,
 				46CC321B1F727C7800632B18 /* UnicodeScalarEx.swift in Sources */,
 				46CC320D1F727C6700632B18 /* Base58.swift in Sources */,

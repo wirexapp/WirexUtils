@@ -74,12 +74,12 @@ public struct SysInfo {
         return (try? SysInfo.stringForKeys([CTL_KERN, KERN_OSVERSION])) ?? ""
     }
     
-    /// Redable description of iPhone
+    /// Readable description of iPhone
     public static var deviceName: String {
         return DeviceName.name(byCode: self.model) ?? self.model
    }
     
-    /// Redable description of iOS
+    /// Readable description of iOS
     public static var osDescription: String {
         return "iOS \(UIDevice.current.systemVersion)"
     }
@@ -135,7 +135,7 @@ public struct SysInfo {
         return keysBuffer
     }
     
-    /// Invoke `sysctl` with an array of identifers, interpreting the returned buffer as the specified type. This function will throw `Error.invalidSize` if the size of buffer returned from `sysctl` fails to match the size of `T`.
+    /// Invoke `sysctl` with an array of identifiers, interpreting the returned buffer as the specified type. This function will throw `Error.invalidSize` if the size of buffer returned from `sysctl` fails to match the size of `T`.
     static func valueOfType<T>(_ type: T.Type, forKeys keys: [Int32]) throws -> T {
         let buffer = try dataForKeys(keys)
         if buffer.count != MemoryLayout<T>.size {
@@ -147,7 +147,7 @@ public struct SysInfo {
         }
     }
     
-    /// Invoke `sysctl` with an array of identifers, interpreting the returned buffer as the specified type. This function will throw `Error.invalidSize` if the size of buffer returned from `sysctl` fails to match the size of `T`.
+    /// Invoke `sysctl` with an array of identifiers, interpreting the returned buffer as the specified type. This function will throw `Error.invalidSize` if the size of buffer returned from `sysctl` fails to match the size of `T`.
     static func valueOfType<T>(_ type: T.Type, forKeys keys: Int32...) throws -> T {
         return try valueOfType(type, forKeys: keys)
     }
@@ -157,7 +157,7 @@ public struct SysInfo {
         return try valueOfType(type, forKeys: keysForName(name))
     }
     
-    /// Invoke `sysctl` with an array of identifers, interpreting the returned buffer as a `String`. This function will throw `Error.malformedUTF8` if the buffer returned from `sysctl` cannot be interpreted as a UTF8 buffer.
+    /// Invoke `sysctl` with an array of identifiers, interpreting the returned buffer as a `String`. This function will throw `Error.malformedUTF8` if the buffer returned from `sysctl` cannot be interpreted as a UTF8 buffer.
     static func stringForKeys(_ keys: [Int32]) throws -> String {
         let optionalString = try dataForKeys(keys).withUnsafeBufferPointer() { dataPointer -> String? in
             dataPointer.baseAddress.flatMap { String(validatingUTF8: $0) }
@@ -168,7 +168,7 @@ public struct SysInfo {
         return s
     }
     
-    /// Invoke `sysctl` with an array of identifers, interpreting the returned buffer as a `String`. This function will throw `Error.malformedUTF8` if the buffer returned from `sysctl` cannot be interpreted as a UTF8 buffer.
+    /// Invoke `sysctl` with an array of identifiers, interpreting the returned buffer as a `String`. This function will throw `Error.malformedUTF8` if the buffer returned from `sysctl` cannot be interpreted as a UTF8 buffer.
     static func stringForKeys(_ keys: Int32...) throws -> String {
         return try stringForKeys(keys)
     }

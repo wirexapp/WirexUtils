@@ -43,7 +43,7 @@
 		A6A2678E2126FADA008BAF5C /* EthHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2678D2126FADA008BAF5C /* EthHelperUrls.swift */; };
 		B1B87F7221ADB04400593D9D /* PasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B87F7121ADB04400593D9D /* PasswordValidator.swift */; };
 		B1B87F7421ADB0E100593D9D /* NSRegularExpressionEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B87F7321ADB0E100593D9D /* NSRegularExpressionEx.swift */; };
-		BD8D4E3620EE367E00487230 /* XprHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8D4E3520EE367E00487230 /* XprHelperUrls.swift */; };
+		BD8D4E3620EE367E00487230 /* XrpHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8D4E3520EE367E00487230 /* XrpHelperUrls.swift */; };
 		BD8D4E3820EE519C00487230 /* CryptoHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8D4E3720EE519C00487230 /* CryptoHelperUrls.swift */; };
 		BDAB020E21AF169300800DAB /* WavesHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB020D21AF169300800DAB /* WavesHelperUrls.swift */; };
 		BDFBC13C2074D5B60051AD73 /* LtcHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFBC13B2074D5B60051AD73 /* LtcHelperUrls.swift */; };
@@ -100,7 +100,7 @@
 		A6A2678D2126FADA008BAF5C /* EthHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthHelperUrls.swift; sourceTree = "<group>"; };
 		B1B87F7121ADB04400593D9D /* PasswordValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidator.swift; sourceTree = "<group>"; };
 		B1B87F7321ADB0E100593D9D /* NSRegularExpressionEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSRegularExpressionEx.swift; sourceTree = "<group>"; };
-		BD8D4E3520EE367E00487230 /* XprHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XprHelperUrls.swift; sourceTree = "<group>"; };
+		BD8D4E3520EE367E00487230 /* XrpHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XrpHelperUrls.swift; sourceTree = "<group>"; };
 		BD8D4E3720EE519C00487230 /* CryptoHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoHelperUrls.swift; sourceTree = "<group>"; };
 		BDAB020D21AF169300800DAB /* WavesHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WavesHelperUrls.swift; sourceTree = "<group>"; };
 		BDFBC13B2074D5B60051AD73 /* LtcHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LtcHelperUrls.swift; sourceTree = "<group>"; };
@@ -243,7 +243,7 @@
 				EEC0B53021CABA6000FDB581 /* Wollo */,
 				BDAB020C21AF166E00800DAB /* Waves */,
 				A6A2678C2126FAC1008BAF5C /* Eth */,
-				BD8D4E3420EE363600487230 /* Xpr */,
+				BD8D4E3420EE363600487230 /* Xrp */,
 				BDFBC13A2074D5810051AD73 /* Ltc */,
 				46CC31F31F727ADB00632B18 /* Btc */,
 				4CDA698A21B6B7A100AFCECC /* CryptoAddressValidator.swift */,
@@ -288,12 +288,12 @@
 			path = Eth;
 			sourceTree = "<group>";
 		};
-		BD8D4E3420EE363600487230 /* Xpr */ = {
+		BD8D4E3420EE363600487230 /* Xrp */ = {
 			isa = PBXGroup;
 			children = (
-				BD8D4E3520EE367E00487230 /* XprHelperUrls.swift */,
+				BD8D4E3520EE367E00487230 /* XrpHelperUrls.swift */,
 			);
-			path = Xpr;
+			path = Xrp;
 			sourceTree = "<group>";
 		};
 		BDAB020C21AF166E00800DAB /* Waves */ = {
@@ -449,7 +449,7 @@
 				B1B87F7421ADB0E100593D9D /* NSRegularExpressionEx.swift in Sources */,
 				46CC32151F727C6E00632B18 /* DispatchTimeEx.swift in Sources */,
 				46CC320B1F727C6100632B18 /* MulticastDelegate.swift in Sources */,
-				BD8D4E3620EE367E00487230 /* XprHelperUrls.swift in Sources */,
+				BD8D4E3620EE367E00487230 /* XrpHelperUrls.swift in Sources */,
 				EEC0B53221CABA7900FDB581 /* WolloHelperUrls.swift in Sources */,
 				461F557D1F861B5A006B1D1D /* SysInfo.swift in Sources */,
 				46CC32171F727C7800632B18 /* DataEx.swift in Sources */,

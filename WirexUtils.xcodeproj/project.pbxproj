@@ -47,6 +47,7 @@
 		BD8D4E3820EE519C00487230 /* CryptoHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8D4E3720EE519C00487230 /* CryptoHelperUrls.swift */; };
 		BDAB020E21AF169300800DAB /* WavesHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB020D21AF169300800DAB /* WavesHelperUrls.swift */; };
 		BDFBC13C2074D5B60051AD73 /* LtcHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFBC13B2074D5B60051AD73 /* LtcHelperUrls.swift */; };
+		EEC0B53221CABA7900FDB581 /* WolloHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC0B53121CABA7900FDB581 /* WolloHelperUrls.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		BD8D4E3720EE519C00487230 /* CryptoHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoHelperUrls.swift; sourceTree = "<group>"; };
 		BDAB020D21AF169300800DAB /* WavesHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WavesHelperUrls.swift; sourceTree = "<group>"; };
 		BDFBC13B2074D5B60051AD73 /* LtcHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LtcHelperUrls.swift; sourceTree = "<group>"; };
+		EEC0B53121CABA7900FDB581 /* WolloHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolloHelperUrls.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +240,7 @@
 		46CC31F21F727ADB00632B18 /* CryptoCurrency */ = {
 			isa = PBXGroup;
 			children = (
+				EEC0B53021CABA6000FDB581 /* Wollo */,
 				BDAB020C21AF166E00800DAB /* Waves */,
 				A6A2678C2126FAC1008BAF5C /* Eth */,
 				BD8D4E3420EE363600487230 /* Xpr */,
@@ -307,6 +310,14 @@
 				BDFBC13B2074D5B60051AD73 /* LtcHelperUrls.swift */,
 			);
 			path = Ltc;
+			sourceTree = "<group>";
+		};
+		EEC0B53021CABA6000FDB581 /* Wollo */ = {
+			isa = PBXGroup;
+			children = (
+				EEC0B53121CABA7900FDB581 /* WolloHelperUrls.swift */,
+			);
+			path = Wollo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -439,6 +450,7 @@
 				46CC32151F727C6E00632B18 /* DispatchTimeEx.swift in Sources */,
 				46CC320B1F727C6100632B18 /* MulticastDelegate.swift in Sources */,
 				BD8D4E3620EE367E00487230 /* XprHelperUrls.swift in Sources */,
+				EEC0B53221CABA7900FDB581 /* WolloHelperUrls.swift in Sources */,
 				461F557D1F861B5A006B1D1D /* SysInfo.swift in Sources */,
 				46CC32171F727C7800632B18 /* DataEx.swift in Sources */,
 				46CC320C1F727C6100632B18 /* WeakBox.swift in Sources */,

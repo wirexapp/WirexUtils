@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07E2014D21DE4BE000AA4927 /* libCardIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E2014121DE4BDF00AA4927 /* libCardIO.a */; };
-		07E2014E21DE4BE000AA4927 /* CardIOViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E2014221DE4BE000AA4927 /* CardIOViewDelegate.h */; };
-		07E2014F21DE4BE000AA4927 /* libopencv_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E2014321DE4BE000AA4927 /* libopencv_core.a */; };
-		07E2015021DE4BE000AA4927 /* CardIODetectionMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E2014421DE4BE000AA4927 /* CardIODetectionMode.h */; };
-		07E2015121DE4BE000AA4927 /* libopencv_imgproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E2014521DE4BE000AA4927 /* libopencv_imgproc.a */; };
-		07E2015221DE4BE000AA4927 /* CardIOCreditCardInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E2014621DE4BE000AA4927 /* CardIOCreditCardInfo.h */; };
-		07E2015321DE4BE000AA4927 /* CardIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E2014721DE4BE000AA4927 /* CardIO.m */; };
-		07E2015421DE4BE000AA4927 /* CardIOPaymentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E2014821DE4BE000AA4927 /* CardIOPaymentViewController.h */; };
-		07E2015521DE4BE000AA4927 /* CardIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E2014921DE4BE000AA4927 /* CardIO.h */; };
-		07E2015621DE4BE000AA4927 /* CardIOPaymentViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E2014A21DE4BE000AA4927 /* CardIOPaymentViewControllerDelegate.h */; };
-		07E2015721DE4BE000AA4927 /* CardIOUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E2014B21DE4BE000AA4927 /* CardIOUtilities.h */; };
-		07E2015821DE4BE000AA4927 /* CardIOView.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E2014C21DE4BE000AA4927 /* CardIOView.h */; };
+		07E2015A21DE4DE000AA4927 /* CardIOWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E2015921DE4DE000AA4927 /* CardIOWrapper.swift */; };
+		07E2016821DE59AE00AA4927 /* CardIOViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E2015C21DE59AB00AA4927 /* CardIOViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07E2016921DE59AE00AA4927 /* CardIOPaymentViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E2015D21DE59AC00AA4927 /* CardIOPaymentViewControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07E2016A21DE59AE00AA4927 /* libCardIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E2015E21DE59AC00AA4927 /* libCardIO.a */; };
+		07E2016B21DE59AE00AA4927 /* libopencv_imgproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E2015F21DE59AC00AA4927 /* libopencv_imgproc.a */; };
+		07E2016C21DE59AE00AA4927 /* CardIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E2016021DE59AC00AA4927 /* CardIO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07E2016D21DE59AE00AA4927 /* CardIODetectionMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E2016121DE59AC00AA4927 /* CardIODetectionMode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07E2016E21DE59AE00AA4927 /* CardIOPaymentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E2016221DE59AC00AA4927 /* CardIOPaymentViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07E2016F21DE59AE00AA4927 /* CardIOUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E2016321DE59AD00AA4927 /* CardIOUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07E2017021DE59AE00AA4927 /* CardIOCreditCardInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E2016421DE59AD00AA4927 /* CardIOCreditCardInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07E2017121DE59AE00AA4927 /* CardIOView.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E2016521DE59AD00AA4927 /* CardIOView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07E2017221DE59AE00AA4927 /* libopencv_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E2016621DE59AD00AA4927 /* libopencv_core.a */; };
+		07E2017321DE59AE00AA4927 /* CardIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E2016721DE59AD00AA4927 /* CardIO.m */; };
 		461F557D1F861B5A006B1D1D /* SysInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F557C1F861B5A006B1D1D /* SysInfo.swift */; };
 		461F557F1F8637FB006B1D1D /* DeviceName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F557E1F8637FB006B1D1D /* DeviceName.swift */; };
 		461F55811F8639CB006B1D1D /* SysInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F55801F8639CB006B1D1D /* SysInfoTests.swift */; };
@@ -73,18 +74,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07E2014121DE4BDF00AA4927 /* libCardIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCardIO.a; path = WirexUtils/CardIO/libCardIO.a; sourceTree = SOURCE_ROOT; };
-		07E2014221DE4BE000AA4927 /* CardIOViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardIOViewDelegate.h; path = WirexUtils/CardIO/CardIOViewDelegate.h; sourceTree = SOURCE_ROOT; };
-		07E2014321DE4BE000AA4927 /* libopencv_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_core.a; path = WirexUtils/CardIO/libopencv_core.a; sourceTree = SOURCE_ROOT; };
-		07E2014421DE4BE000AA4927 /* CardIODetectionMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardIODetectionMode.h; path = WirexUtils/CardIO/CardIODetectionMode.h; sourceTree = SOURCE_ROOT; };
-		07E2014521DE4BE000AA4927 /* libopencv_imgproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopencv_imgproc.a; path = WirexUtils/CardIO/libopencv_imgproc.a; sourceTree = SOURCE_ROOT; };
-		07E2014621DE4BE000AA4927 /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardIOCreditCardInfo.h; path = WirexUtils/CardIO/CardIOCreditCardInfo.h; sourceTree = SOURCE_ROOT; };
-		07E2014721DE4BE000AA4927 /* CardIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardIO.m; path = WirexUtils/CardIO/CardIO.m; sourceTree = SOURCE_ROOT; };
-		07E2014821DE4BE000AA4927 /* CardIOPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardIOPaymentViewController.h; path = WirexUtils/CardIO/CardIOPaymentViewController.h; sourceTree = SOURCE_ROOT; };
-		07E2014921DE4BE000AA4927 /* CardIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardIO.h; path = WirexUtils/CardIO/CardIO.h; sourceTree = SOURCE_ROOT; };
-		07E2014A21DE4BE000AA4927 /* CardIOPaymentViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardIOPaymentViewControllerDelegate.h; path = WirexUtils/CardIO/CardIOPaymentViewControllerDelegate.h; sourceTree = SOURCE_ROOT; };
-		07E2014B21DE4BE000AA4927 /* CardIOUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardIOUtilities.h; path = WirexUtils/CardIO/CardIOUtilities.h; sourceTree = SOURCE_ROOT; };
-		07E2014C21DE4BE000AA4927 /* CardIOView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardIOView.h; path = WirexUtils/CardIO/CardIOView.h; sourceTree = SOURCE_ROOT; };
+		07E2015921DE4DE000AA4927 /* CardIOWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardIOWrapper.swift; path = WirexUtils/CardIO/CardIOWrapper.swift; sourceTree = SOURCE_ROOT; };
+		07E2015C21DE59AB00AA4927 /* CardIOViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOViewDelegate.h; sourceTree = "<group>"; };
+		07E2015D21DE59AC00AA4927 /* CardIOPaymentViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewControllerDelegate.h; sourceTree = "<group>"; };
+		07E2015E21DE59AC00AA4927 /* libCardIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCardIO.a; sourceTree = "<group>"; };
+		07E2015F21DE59AC00AA4927 /* libopencv_imgproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopencv_imgproc.a; sourceTree = "<group>"; };
+		07E2016021DE59AC00AA4927 /* CardIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIO.h; sourceTree = "<group>"; };
+		07E2016121DE59AC00AA4927 /* CardIODetectionMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIODetectionMode.h; sourceTree = "<group>"; };
+		07E2016221DE59AC00AA4927 /* CardIOPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewController.h; sourceTree = "<group>"; };
+		07E2016321DE59AD00AA4927 /* CardIOUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOUtilities.h; sourceTree = "<group>"; };
+		07E2016421DE59AD00AA4927 /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOCreditCardInfo.h; sourceTree = "<group>"; };
+		07E2016521DE59AD00AA4927 /* CardIOView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOView.h; sourceTree = "<group>"; };
+		07E2016621DE59AD00AA4927 /* libopencv_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopencv_core.a; sourceTree = "<group>"; };
+		07E2016721DE59AD00AA4927 /* CardIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardIO.m; sourceTree = "<group>"; };
 		461F557C1F861B5A006B1D1D /* SysInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysInfo.swift; sourceTree = "<group>"; };
 		461F557E1F8637FB006B1D1D /* DeviceName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceName.swift; sourceTree = "<group>"; };
 		461F55801F8639CB006B1D1D /* SysInfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysInfoTests.swift; sourceTree = "<group>"; };
@@ -136,9 +138,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07E2014D21DE4BE000AA4927 /* libCardIO.a in Frameworks */,
-				07E2014F21DE4BE000AA4927 /* libopencv_core.a in Frameworks */,
-				07E2015121DE4BE000AA4927 /* libopencv_imgproc.a in Frameworks */,
+				07E2016A21DE59AE00AA4927 /* libCardIO.a in Frameworks */,
+				07E2016B21DE59AE00AA4927 /* libopencv_imgproc.a in Frameworks */,
+				07E2017221DE59AE00AA4927 /* libopencv_core.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,21 +158,30 @@
 		07E2012421DE49A100AA4927 /* CardIO */ = {
 			isa = PBXGroup;
 			children = (
-				07E2014921DE4BE000AA4927 /* CardIO.h */,
-				07E2014721DE4BE000AA4927 /* CardIO.m */,
-				07E2014621DE4BE000AA4927 /* CardIOCreditCardInfo.h */,
-				07E2014421DE4BE000AA4927 /* CardIODetectionMode.h */,
-				07E2014821DE4BE000AA4927 /* CardIOPaymentViewController.h */,
-				07E2014A21DE4BE000AA4927 /* CardIOPaymentViewControllerDelegate.h */,
-				07E2014B21DE4BE000AA4927 /* CardIOUtilities.h */,
-				07E2014C21DE4BE000AA4927 /* CardIOView.h */,
-				07E2014221DE4BE000AA4927 /* CardIOViewDelegate.h */,
-				07E2014121DE4BDF00AA4927 /* libCardIO.a */,
-				07E2014321DE4BE000AA4927 /* libopencv_core.a */,
-				07E2014521DE4BE000AA4927 /* libopencv_imgproc.a */,
+				07E2015921DE4DE000AA4927 /* CardIOWrapper.swift */,
+				07E2015B21DE591A00AA4927 /* CardIO */,
 			);
 			name = CardIO;
 			path = CardIO/CardIO;
+			sourceTree = "<group>";
+		};
+		07E2015B21DE591A00AA4927 /* CardIO */ = {
+			isa = PBXGroup;
+			children = (
+				07E2016021DE59AC00AA4927 /* CardIO.h */,
+				07E2016721DE59AD00AA4927 /* CardIO.m */,
+				07E2016421DE59AD00AA4927 /* CardIOCreditCardInfo.h */,
+				07E2016121DE59AC00AA4927 /* CardIODetectionMode.h */,
+				07E2016221DE59AC00AA4927 /* CardIOPaymentViewController.h */,
+				07E2015D21DE59AC00AA4927 /* CardIOPaymentViewControllerDelegate.h */,
+				07E2016321DE59AD00AA4927 /* CardIOUtilities.h */,
+				07E2016521DE59AD00AA4927 /* CardIOView.h */,
+				07E2015C21DE59AB00AA4927 /* CardIOViewDelegate.h */,
+				07E2015E21DE59AC00AA4927 /* libCardIO.a */,
+				07E2016621DE59AD00AA4927 /* libopencv_core.a */,
+				07E2015F21DE59AC00AA4927 /* libopencv_imgproc.a */,
+			);
+			path = CardIO;
 			sourceTree = "<group>";
 		};
 		465C74151F28881500CD469E = {
@@ -375,16 +386,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07E2015521DE4BE000AA4927 /* CardIO.h in Headers */,
 				465C74301F28881500CD469E /* WirexUtils.h in Headers */,
-				07E2015021DE4BE000AA4927 /* CardIODetectionMode.h in Headers */,
-				07E2015821DE4BE000AA4927 /* CardIOView.h in Headers */,
+				07E2016821DE59AE00AA4927 /* CardIOViewDelegate.h in Headers */,
+				07E2016F21DE59AE00AA4927 /* CardIOUtilities.h in Headers */,
 				46CC32111F727C6A00632B18 /* CryptoFacade.h in Headers */,
-				07E2014E21DE4BE000AA4927 /* CardIOViewDelegate.h in Headers */,
-				07E2015721DE4BE000AA4927 /* CardIOUtilities.h in Headers */,
-				07E2015621DE4BE000AA4927 /* CardIOPaymentViewControllerDelegate.h in Headers */,
-				07E2015421DE4BE000AA4927 /* CardIOPaymentViewController.h in Headers */,
-				07E2015221DE4BE000AA4927 /* CardIOCreditCardInfo.h in Headers */,
+				07E2016921DE59AE00AA4927 /* CardIOPaymentViewControllerDelegate.h in Headers */,
+				07E2017121DE59AE00AA4927 /* CardIOView.h in Headers */,
+				07E2016E21DE59AE00AA4927 /* CardIOPaymentViewController.h in Headers */,
+				07E2016D21DE59AE00AA4927 /* CardIODetectionMode.h in Headers */,
+				07E2016C21DE59AE00AA4927 /* CardIO.h in Headers */,
+				07E2017021DE59AE00AA4927 /* CardIOCreditCardInfo.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +515,7 @@
 				46CC32101F727C6700632B18 /* CryptoPaymentURI.swift in Sources */,
 				B1B87F7421ADB0E100593D9D /* NSRegularExpressionEx.swift in Sources */,
 				46CC32151F727C6E00632B18 /* DispatchTimeEx.swift in Sources */,
+				07E2015A21DE4DE000AA4927 /* CardIOWrapper.swift in Sources */,
 				46CC320B1F727C6100632B18 /* MulticastDelegate.swift in Sources */,
 				BD8D4E3620EE367E00487230 /* XprHelperUrls.swift in Sources */,
 				EEC0B53221CABA7900FDB581 /* WolloHelperUrls.swift in Sources */,
@@ -515,8 +527,8 @@
 				46CC321A1F727C7800632B18 /* StringEx.swift in Sources */,
 				B1B87F7221ADB04400593D9D /* PasswordValidator.swift in Sources */,
 				BDFBC13C2074D5B60051AD73 /* LtcHelperUrls.swift in Sources */,
-				07E2015321DE4BE000AA4927 /* CardIO.m in Sources */,
 				4CDA698B21B6B7A100AFCECC /* CryptoAddressValidator.swift in Sources */,
+				07E2017321DE59AE00AA4927 /* CardIO.m in Sources */,
 				46CC321D1F727C7B00632B18 /* EmailValidator.swift in Sources */,
 				46CC321B1F727C7800632B18 /* UnicodeScalarEx.swift in Sources */,
 				46CC320D1F727C6700632B18 /* Base58.swift in Sources */,
@@ -681,6 +693,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WirexUtils/CardIO/CardIO",
 					"$(PROJECT_DIR)/WirexUtils/CardIO",
+					"$(PROJECT_DIR)/WirexUtils/CardIO/CardIO/CardIO",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wirex.utils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -707,6 +720,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WirexUtils/CardIO/CardIO",
 					"$(PROJECT_DIR)/WirexUtils/CardIO",
+					"$(PROJECT_DIR)/WirexUtils/CardIO/CardIO/CardIO",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wirex.utils;
 				PRODUCT_NAME = "$(TARGET_NAME)";

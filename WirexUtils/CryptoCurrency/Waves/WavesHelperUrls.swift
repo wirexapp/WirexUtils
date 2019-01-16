@@ -11,7 +11,7 @@ import Foundation
 private enum WavesHelperUrlsConstants {
     static let wavesBaseTxUrl = "https://wavesexplorer.com/tx/"
     static let testnetBaseTxUrl = "https://testnet.wavesexplorer.com/tx/"
-    static let wavesScheme = "waves:"
+    static let wavesScheme = ""//"waves:"
 }
 
 public struct WavesHelperUrls {

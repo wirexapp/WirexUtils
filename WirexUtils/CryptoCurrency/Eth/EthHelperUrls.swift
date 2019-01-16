@@ -11,7 +11,7 @@ import Foundation
 private enum EthHelperUrlsConstants {
     static let ethBaseTxUrl = "https://etherscan.io/tx/"
     static let testnetBaseTxUrl = "https://kovan.etherscan.io/tx/"
-    static let ethereumScheme = "ether:"
+    static let ethereumScheme = ""//"ether:"
 }
 
 public struct EthHelperUrls {

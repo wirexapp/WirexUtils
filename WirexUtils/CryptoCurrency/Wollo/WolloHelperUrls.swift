@@ -11,7 +11,7 @@ import Foundation
 private enum WolloHelperUrlsConstants {
     static let wolloBaseTxUrl = "https://stellar.expert/explorer/public/tx/"
     static let testnetBaseTxUrl = "https://stellar.expert/explorer/testnet/tx/"
-    static let wolloScheme = "wollo:"
+    static let wolloScheme = ""//"wollo:"
 }
 
 public struct WolloHelperUrls {

@@ -12,8 +12,6 @@ public struct CryptoPaymentURI {
     
     public enum Scheme: String {
         case btc = "bitcoin"
-        case ltc = "litecoin"
-        case xrp = "ripple"
 
         public var str: String { return self.rawValue }
     }
@@ -50,7 +48,7 @@ public struct CryptoPaymentURI {
         return parameters[Fields.destinationTag.str]
     }
     
-    public init(scheme: Scheme, address: String, amount: Decimal? = nil, label: String? = nil, message: String? = nil, params: [String : String]? = nil) {
+    public init(scheme: Scheme? = nil, address: String, amount: Decimal? = nil, label: String? = nil, message: String? = nil, params: [String : String]? = nil) {
         self.scheme = scheme
         self.address = address
         
@@ -77,10 +75,14 @@ public struct CryptoPaymentURI {
     
     public init?(fromStr s: String) {
         let urlString = s.components(separatedBy: .whitespacesAndNewlines).joined()
-        guard let components = URLComponents(string: urlString), !components.path.isEmpty else { return nil }
+        guard let components = URLComponents(string: urlString) else { return nil }
+
+        let address = components.host ?? components.path
+
+        guard !address.isEmpty else { return nil }
         
         self.scheme = Scheme(rawValue: components.scheme?.lowercased() ?? "")
-        self.address = components.path
+        self.address = address
         self.parameters = components.dictRepr
     }
     

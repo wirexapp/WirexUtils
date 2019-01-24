@@ -47,6 +47,7 @@
 		BD8D4E3820EE519C00487230 /* CryptoHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8D4E3720EE519C00487230 /* CryptoHelperUrls.swift */; };
 		BDAB020E21AF169300800DAB /* WavesHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAB020D21AF169300800DAB /* WavesHelperUrls.swift */; };
 		BDFBC13C2074D5B60051AD73 /* LtcHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFBC13B2074D5B60051AD73 /* LtcHelperUrls.swift */; };
+		EE42EFAD21FA03EF00E4211A /* NanoHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE42EFAC21FA03EF00E4211A /* NanoHelperUrls.swift */; };
 		EEC0B53221CABA7900FDB581 /* WolloHelperUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC0B53121CABA7900FDB581 /* WolloHelperUrls.swift */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +105,7 @@
 		BD8D4E3720EE519C00487230 /* CryptoHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoHelperUrls.swift; sourceTree = "<group>"; };
 		BDAB020D21AF169300800DAB /* WavesHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WavesHelperUrls.swift; sourceTree = "<group>"; };
 		BDFBC13B2074D5B60051AD73 /* LtcHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LtcHelperUrls.swift; sourceTree = "<group>"; };
+		EE42EFAC21FA03EF00E4211A /* NanoHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoHelperUrls.swift; sourceTree = "<group>"; };
 		EEC0B53121CABA7900FDB581 /* WolloHelperUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolloHelperUrls.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -240,6 +242,7 @@
 		46CC31F21F727ADB00632B18 /* CryptoCurrency */ = {
 			isa = PBXGroup;
 			children = (
+				EE42EFAB21FA039000E4211A /* Nano */,
 				EEC0B53021CABA6000FDB581 /* Wollo */,
 				BDAB020C21AF166E00800DAB /* Waves */,
 				A6A2678C2126FAC1008BAF5C /* Eth */,
@@ -310,6 +313,14 @@
 				BDFBC13B2074D5B60051AD73 /* LtcHelperUrls.swift */,
 			);
 			path = Ltc;
+			sourceTree = "<group>";
+		};
+		EE42EFAB21FA039000E4211A /* Nano */ = {
+			isa = PBXGroup;
+			children = (
+				EE42EFAC21FA03EF00E4211A /* NanoHelperUrls.swift */,
+			);
+			path = Nano;
 			sourceTree = "<group>";
 		};
 		EEC0B53021CABA6000FDB581 /* Wollo */ = {
@@ -447,6 +458,7 @@
 				461F557F1F8637FB006B1D1D /* DeviceName.swift in Sources */,
 				46CC32101F727C6700632B18 /* CryptoPaymentURI.swift in Sources */,
 				B1B87F7421ADB0E100593D9D /* NSRegularExpressionEx.swift in Sources */,
+				EE42EFAD21FA03EF00E4211A /* NanoHelperUrls.swift in Sources */,
 				46CC32151F727C6E00632B18 /* DispatchTimeEx.swift in Sources */,
 				46CC320B1F727C6100632B18 /* MulticastDelegate.swift in Sources */,
 				BD8D4E3620EE367E00487230 /* XrpHelperUrls.swift in Sources */,

@@ -52,6 +52,10 @@ public struct DeviceName {
                                 "iPhone10,5": "iPhone 8 Plus",
                                 "iPhone10,3": "iPhone X",
                                 "iPhone10,6": "iPhone X",
+                                "iPhone11,2": "iPhone XS",
+                                "iPhone11,4": "iPhone XS Max",
+                                "iPhone11,6": "iPhone XS Max",
+                                "iPhone11,8": "iPhone XR",
                          
                                 "iPad1,1" : "iPad",
                                 "iPad2,1" : "iPad 2 (WiFi)",
@@ -89,5 +93,13 @@ public struct DeviceName {
                                 "iPad7,1" : "iPad Pro 2G",
                                 "iPad7,2" : "iPad Pro 2G",
                                 "iPad7,3" : "iPad Pro 10.5-inch",
-                                "iPad7,4" : "iPad Pro 10.5-inch"]
+                                "iPad7,4" : "iPad Pro 10.5-inch",
+                                "iPad8,1" : "iPad Pro 11-inch",
+                                "iPad8,2" : "iPad Pro 11-inch",
+                                "iPad8,3" : "iPad Pro 11-inch",
+                                "iPad8,4" : "iPad Pro 11-inch",
+                                "iPad8,5" : "iPad Pro 12.9-inch",
+                                "iPad8,6" : "iPad Pro 12.9-inch",
+                                "iPad8,7" : "iPad Pro 12.9-inch",
+                                "iPad8,8" : "iPad Pro 12.9-inch"]
 }

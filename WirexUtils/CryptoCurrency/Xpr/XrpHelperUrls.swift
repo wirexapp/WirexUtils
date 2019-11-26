@@ -11,7 +11,7 @@ import Foundation
 private enum XrpHelperUrlsConstants {
     static let rippleScheme = ""//"ripple:"
     static let tagArgument = "?dt="
-    static let baseXrpChartsUrlString = "https://xrpcharts.ripple.com/#/transactions/"
+    static let baseXrpChartsUrlString = "https://bithomp.com/explorer/"
 }
 
 public struct XrpHelperUrls {
